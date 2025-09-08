@@ -21,11 +21,88 @@
   </header>
 
   <section style="margin-top:100px;">
-    <h2>Kontakt</h2>
-    <p>Wir freuen uns auf Ihre Nachricht oder Ihren Anruf!</p>
-    <a class="btn" href="tel:+49123456789">📞 Telefon</a>
-    <a class="btn" href="mailto:info@sannovia.pflege">✉️ E-Mail</a>
-    <a class="btn" href="https://wa.me/49123456789" target="_blank">💬 WhatsApp</a>
+    <h2>Kontaktieren Sie uns</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto; font-size: 1.1rem; color: #666;">
+      Haben Sie Fragen oder benötigen Sie eine Beratung? Wir sind für Sie da und freuen uns auf Ihre Nachricht!
+    </p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0;">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3 style="color: #023e8a; margin-bottom: 1.5rem;">📝 Nachricht senden</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Vollständiger Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="service">Interessierte Dienstleistung</label>
+            <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid rgba(0,180,216,0.2); border-radius: 15px; font-family: 'Inter', sans-serif;">
+              <option value="">Bitte wählen...</option>
+              <option value="ambulante-pflege">Ambulante Pflege</option>
+              <option value="hauswirtschaft">Hauswirtschaftliche Hilfe</option>
+              <option value="alltagsbegleitung">Begleitung im Alltag</option>
+              <option value="beratung">Kostenlose Beratung</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Ihre Nachricht *</label>
+            <textarea id="message" name="message" placeholder="Beschreiben Sie Ihre Bedürfnisse..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Nachricht senden</button>
+        </form>
+      </div>
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 style="color: #023e8a; margin-bottom: 1.5rem;">📞 Direkte Kontakte</h3>
+        <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,180,216,0.1); margin-bottom: 2rem;">
+          <div style="margin-bottom: 1.5rem;">
+            <h4>📱 Telefon & WhatsApp</h4>
+            <p style="margin: 0.5rem 0;"><strong>+49 123 456 789</strong></p>
+            <p style="color: #666; font-size: 0.9rem;">Mo-Fr: 8:00-18:00 Uhr<br>Sa: 9:00-14:00 Uhr</p>
+            <a href="tel:+49123456789" class="btn btn-contact" style="margin-right: 1rem;">Anrufen</a>
+            <a href="https://wa.me/49123456789" target="_blank" class="btn btn-success">WhatsApp</a>
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <h4>✉️ E-Mail</h4>
+            <p style="margin: 0.5rem 0;"><strong>info@sannovia-pflege.de</strong></p>
+            <p style="color: #666; font-size: 0.9rem;">Antwort innerhalb von 24 Stunden</p>
+            <a href="mailto:info@sannovia-pflege.de" class="btn btn-primary">E-Mail senden</a>
+          </div>
+          
+          <div>
+            <h4>🏢 Adresse</h4>
+            <p style="margin: 0.5rem 0;">
+              <strong>Sannovia Pflege GmbH</strong><br>
+              Musterstraße 123<br>
+              12345 Musterstadt<br>
+              Deutschland
+            </p>
+          </div>
+        </div>
+        
+        <div class="map-placeholder">
+          📍 Unser Standort auf der Karte
+        </div>
+      </div>
+    </div>
+    
+    <div style="background: linear-gradient(135deg, #00b4d8, #0077b6); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 3rem 0;">
+      <h3>🚨 Notfall oder dringende Anfrage?</h3>
+      <p style="font-size: 1.1rem; margin: 1rem 0;">Bei akuten Pflegebedürfnissen sind wir auch außerhalb der Geschäftszeiten für Sie da.</p>
+      <a href="tel:+49123456789" class="btn" style="background: white; color: #0077b6; margin: 0.5rem;">Notfall-Hotline</a>
+      <a href="https://wa.me/49123456789" target="_blank" class="btn" style="background: rgba(255,255,255,0.2); color: white; margin: 0.5rem;">24/7 WhatsApp</a>
+    </div>
   </section>
 
   <footer>
