@@ -8,7 +8,29 @@ const server = http.createServer((req, res) => {
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
   
-  let filePath = path.join(__dirname, 'index.html');
+  let filePath;
+  
+  // Handle different routes
+  if (req.url === '/' || req.url === '/index.html') {
+    filePath = path.join(__dirname, 'index.html');
+  } else if (req.url === '/leistungen.html') {
+    filePath = path.join(__dirname, 'leistungen.html');
+  } else if (req.url === '/ueber-uns.html') {
+    filePath = path.join(__dirname, 'ueber-uns.html');
+  } else if (req.url === '/kontakt.html') {
+    filePath = path.join(__dirname, 'kontakt.html');
+  } else if (req.url === '/style.css') {
+    filePath = path.join(__dirname, 'style.css');
+  } else {
+    filePath = path.join(__dirname, 'index.html');
+  }
+  
+  // Determine content type
+  const extname = String(path.extname(filePath)).toLowerCase();
+  let contentType = 'text/html';
+  if (extname === '.css') {
+    contentType = 'text/css';
+  }
   
   fs.readFile(filePath, 'utf8', (err, content) => {
     if (err) {
@@ -17,7 +39,7 @@ const server = http.createServer((req, res) => {
       return;
     }
     
-    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.writeHead(200, { 'Content-Type': contentType });
     res.end(content);
   });
 });
