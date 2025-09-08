@@ -141,6 +141,32 @@ function showNotification(message, type) {
     }, 4000);
 }
 
+// Hamburger Menu Toggle
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    if (mobileMenu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close menu when clicking on a link
+function closeMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
@@ -155,11 +181,29 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(createFloatingChat, 3000);
     setTimeout(createSecondaryPopup, 6000);
     
+    // Highlight current page in mobile menu
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
+    const currentLink = document.querySelector(`.mobile-menu a[href="${currentPage}"]`);
     if (currentLink) {
         currentLink.classList.add('active');
     }
+    
+    // Add click handlers to menu links
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburger = document.querySelector('.hamburger');
+        
+        if (mobileMenu.classList.contains('active') && 
+            !mobileMenu.contains(e.target) && 
+            !hamburger.contains(e.target)) {
+            closeMenu();
+        }
+    });
 });
 
 // Add additional animations to CSS
