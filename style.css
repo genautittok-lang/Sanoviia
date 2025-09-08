@@ -635,4 +635,37 @@ h2::after {
     max-width: 250px;
     font-size: 0.9rem;
   }
+  
+  /* Mobile Button Optimization */
+  .btn-cool {
+    padding: 1rem 1.8rem;
+    margin: 0.5rem 0.3rem;
+    font-size: 0.9rem;
+    min-width: 150px;
+    border-radius: 14px;
+  }
+  
+  .btn-cool .icon {
+    margin-right: 0.6rem;
+    font-size: 1.1rem;
+  }
+  
+  .btn-cool:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  .btn-cool:active {
+    transform: translateY(-1px) scale(0.98);
+  }
+  
+  /* Stack buttons vertically on mobile */
+  .hero div {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .services {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
