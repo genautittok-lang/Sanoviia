@@ -21,6 +21,8 @@ const server = http.createServer((req, res) => {
     filePath = path.join(__dirname, 'kontakt.html');
   } else if (req.url === '/style.css') {
     filePath = path.join(__dirname, 'style.css');
+  } else if (req.url === '/script.js') {
+    filePath = path.join(__dirname, 'script.js');
   } else {
     filePath = path.join(__dirname, 'index.html');
   }
@@ -30,6 +32,8 @@ const server = http.createServer((req, res) => {
   let contentType = 'text/html';
   if (extname === '.css') {
     contentType = 'text/css';
+  } else if (extname === '.js') {
+    contentType = 'application/javascript';
   }
   
   fs.readFile(filePath, 'utf8', (err, content) => {
