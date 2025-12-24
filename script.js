@@ -4,7 +4,7 @@ function animateOnScroll() {
     
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
+        const elementVisible = 100;
         
         if (elementTop < window.innerHeight - elementVisible) {
             element.classList.add('animate');
@@ -15,22 +15,15 @@ function animateOnScroll() {
 // Active menu highlighting
 function highlightActiveMenu() {
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
     
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
         const sectionHeight = section.clientHeight;
         
         if (sectionTop <= 100 && sectionTop + sectionHeight > 100) {
-            const activeLink = document.querySelector(`nav a[href="#${section.id}"]`);
-            
-            // Remove active class from all links
-            navLinks.forEach(link => link.classList.remove('active'));
-            
-            // Add active class to current section link
-            if (activeLink) {
-                activeLink.classList.add('active');
-            }
+            const activeLink = document.querySelector(`.mobile-menu a[href*="${section.id}"]`);
+            document.querySelectorAll('.mobile-menu a').forEach(link => link.classList.remove('active'));
+            if (activeLink) activeLink.classList.add('active');
         }
     });
 }
@@ -60,110 +53,25 @@ function createFloatingChat() {
     }, 10000);
 }
 
-function createSecondaryPopup() {
-    const popup = document.createElement('div');
-    popup.className = 'floating-chat-secondary';
-    popup.innerHTML = `
-        📞 Rufen Sie uns an!
-        <button class="chat-close" onclick="this.parentElement.remove()">×</button>
-    `;
-    
-    popup.addEventListener('click', function(e) {
-        if (e.target.className !== 'chat-close') {
-            window.open('tel:+49123456789', '_blank');
-        }
-    });
-    
-    document.body.appendChild(popup);
-    
-    setTimeout(() => {
-        if (popup.parentElement) {
-            popup.style.animation = 'fadeOut 0.5s ease';
-            setTimeout(() => popup.remove(), 500);
-        }
-    }, 8000);
-}
-
-// Form validation
-function validateContactForm() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
-        
-        if (!name || !email || !message) {
-            showNotification('Bitte füllen Sie alle Felder aus!', 'error');
-            return;
-        }
-        
-        if (!isValidEmail(email)) {
-            showNotification('Bitte geben Sie eine gültige E-Mail-Adresse ein!', 'error');
-            return;
-        }
-        
-        showNotification('Vielen Dank! Wir werden uns bald bei Ihnen melden.', 'success');
-        form.reset();
-    });
-}
-
-function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function showNotification(message, type) {
-    const notification = document.createElement('div');
-    notification.className = `notification ${type}`;
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: ${type === 'success' ? '#00b894' : '#ff6b6b'};
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 50px;
-        z-index: 10000;
-        animation: slideInDown 0.5s ease;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    `;
-    notification.textContent = message;
-    
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.style.animation = 'slideUp 0.5s ease';
-        setTimeout(() => notification.remove(), 500);
-    }, 4000);
-}
-
-// Hamburger Menu Toggle
+// Navigation Modal Logic
 function toggleMenu() {
+    const modal = document.getElementById('navModal');
     const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
+    modal.classList.toggle('active');
     hamburger.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
     
-    // Prevent body scroll when menu is open
-    if (mobileMenu.classList.contains('active')) {
+    if (modal.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
     } else {
         document.body.style.overflow = 'auto';
     }
 }
 
-// Close menu when clicking on a link
 function closeMenu() {
+    const modal = document.getElementById('navModal');
     const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
+    modal.classList.remove('active');
     hamburger.classList.remove('active');
-    mobileMenu.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
 
@@ -175,34 +83,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     animateOnScroll();
-    validateContactForm();
     
-    // Show popups with different timings
+    // Show popups
     setTimeout(createFloatingChat, 3000);
-    setTimeout(createSecondaryPopup, 6000);
     
-    // Highlight current page in mobile menu
+    // Highlight current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const currentLink = document.querySelector(`.mobile-menu a[href="${currentPage}"]`);
-    if (currentLink) {
-        currentLink.classList.add('active');
-    }
+    const currentLink = document.querySelector(`.nav-modal-links a[href="${currentPage}"]`);
+    if (currentLink) currentLink.classList.add('active');
     
-    // Add click handlers to menu links
-    document.querySelectorAll('.mobile-menu a').forEach(link => {
+    // Close modal on link click
+    document.querySelectorAll('.nav-modal-links a').forEach(link => {
         link.addEventListener('click', closeMenu);
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        const mobileMenu = document.getElementById('mobileMenu');
-        const hamburger = document.querySelector('.hamburger');
-        
-        if (mobileMenu.classList.contains('active') && 
-            !mobileMenu.contains(e.target) && 
-            !hamburger.contains(e.target)) {
-            closeMenu();
-        }
     });
 });
 
@@ -216,10 +108,6 @@ style.textContent = `
     @keyframes slideInDown {
         from { opacity: 0; transform: translate(-50%, -100px); }
         to { opacity: 1; transform: translate(-50%, 0); }
-    }
-    @keyframes slideUp {
-        from { opacity: 1; transform: translate(-50%, 0); }
-        to { opacity: 0; transform: translate(-50%, -100px); }
     }
 `;
 document.head.appendChild(style);

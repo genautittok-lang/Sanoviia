@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="about-page">
+<body>
   <header>
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
-        Sannovia Pflege
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Logo">
+        Sannovia
       </a>
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
@@ -20,76 +20,29 @@
         <span></span>
       </div>
     </nav>
-    
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">🏠 Startseite</a>
-      <a href="leistungen.html">⚕️ Leistungen</a>
-      <a href="ueber-uns.html">👥 Über uns</a>
-      <a href="kontakt.html">📞 Kontakt</a>
-      <div class="language-switcher">
-        <a href="#" class="lang-btn active">DE</a>
-        <a href="#" class="lang-btn">EN</a>
-        <a href="#" class="lang-btn">RU</a>
-        <a href="#" class="lang-btn">AR</a>
-      </div>
-    </div>
   </header>
 
+  <div class="nav-modal" id="navModal">
+    <div class="nav-modal-content">
+      <div class="nav-modal-links">
+        <a href="index.html">🏠 Startseite</a>
+        <a href="leistungen.html">⚕️ Leistungen</a>
+        <a href="ueber-uns.html">👥 Über uns</a>
+        <a href="kontakt.html">📞 Kontakt</a>
+      </div>
+    </div>
+  </div>
+
   <a href="#" class="featured-badge">
-    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Icon">
-    Sannovia
+    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Badge Icon">
+    <span>Sannovia</span>
   </a>
 
-  <section style="margin-top:100px;">
-    <h2>Pflege mit Herz und Kompetenz</h2>
-    
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin: 3rem 0;">
-      <div>
-        <h3>👨‍⚕️ Über Sannovia Pflege</h3>
-        <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
-          Ich bin eine <strong>examinierte Pflegefachkraft</strong> mit 5 Jahren Berufserfahrung im Bereich der stationären und ambulanten Versorgung.
-          Sannovia Pflege bietet spezialisierte medizinische Behandlungspflege sowie psychosoziale Unterstützung in Hannover und Umgebung.
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.7;">
-          Mein Fokus liegt auf einer fachgerechten, individuellen Versorgung – von komplexer Medizintechnik wie LVAD-Systemen bis hin zur empathischen Begleitung im Alltag.
-        </p>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1576765607924-b4ae6c4c19ab?auto=format&fit=crop&w=600&q=80" alt="Fachpflege" style="width:100%;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1);">
-      </div>
-    </div>
-    
-    <div class="services" style="margin: 4rem 0;">
-      <div class="service-card-enhanced">
-        <span class="service-icon">🤝</span>
-        <h3>Psychosoziale Begleitung</h3>
-        <p>Unterstützung für Patienten und Angehörige bei psychischer Belastung, Angstzuständen oder Isolation.</p>
-      </div>
-      <div class="service-card-enhanced">
-        <span class="service-icon">🌍</span>
-        <h3>Kulturelle Sensibilität</h3>
-        <p>Respektvolle Betreuung unter Berücksichtigung kultureller Bedürfnisse. Mehrsprachig verfügbar (DE, EN, RU, AR).</p>
-      </div>
-      <div class="service-card-enhanced">
-        <span class="service-icon">⏱️</span>
-        <h3>Keine Fließbandpflege</h3>
-        <p>Bei uns steht der Mensch im மையpunkt. Wir nehmen uns Zeit für echte, individuelle Zuwendung.</p>
-      </div>
-    </div>
-    
-    <div style="background: linear-gradient(135deg, rgba(0,180,216,0.1), rgba(2,62,138,0.1)); padding: 3rem; border-radius: 20px; text-align: center; margin: 3rem 0;">
-      <h3>💬 Was unsere Klienten sagen</h3>
-      <blockquote style="font-style: italic; font-size: 1.2rem; margin: 2rem 0; color: #023e8a;">
-        "Das Team von Sannovia Pflege ist einfach wunderbar. Sie kümmern sich mit so viel Herz um meine Mutter."<br>
-        <strong>- Familie Schmidt</strong>
-      </blockquote>
-      <a href="kontakt.html" class="btn-cool btn-primary"><span class="icon">🤝</span>Werden Sie Teil unserer Familie</a>
-    </div>
+  <section style="margin-top:100px; text-align: center;">
+    <h2 style="font-size: 2.5rem; color: #023e8a;">Pflege mit Herz</h2>
+    <p style="font-size: 1.2rem; max-width: 800px; margin: 2rem auto;">Wir sind Ihr Partner für professionelle Pflege in Hannover.</p>
   </section>
 
-  <footer>
-    <p>© 2025 Sannovia Pflege – Alle Rechte vorbehalten.</p>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>

@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="contact-page">
+<body>
   <header>
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
-        Sannovia Pflege
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Logo">
+        Sannovia
       </a>
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
@@ -20,114 +20,30 @@
         <span></span>
       </div>
     </nav>
-    
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">🏠 Startseite</a>
-      <a href="leistungen.html">⚕️ Leistungen</a>
-      <a href="ueber-uns.html">👥 Über uns</a>
-      <a href="kontakt.html">📞 Kontakt</a>
-      <div class="language-switcher">
-        <a href="#" class="lang-btn active">DE</a>
-        <a href="#" class="lang-btn">EN</a>
-        <a href="#" class="lang-btn">RU</a>
-        <a href="#" class="lang-btn">AR</a>
-      </div>
-    </div>
   </header>
 
+  <div class="nav-modal" id="navModal">
+    <div class="nav-modal-content">
+      <div class="nav-modal-links">
+        <a href="index.html">🏠 Startseite</a>
+        <a href="leistungen.html">⚕️ Leistungen</a>
+        <a href="ueber-uns.html">👥 Über uns</a>
+        <a href="kontakt.html">📞 Kontakt</a>
+      </div>
+    </div>
+  </div>
+
   <a href="#" class="featured-badge">
-    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Icon">
-    Sannovia
+    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Badge Icon">
+    <span>Sannovia</span>
   </a>
 
-  <section style="margin-top:100px;">
-    <h2>Kontaktieren Sie uns</h2>
-    <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto; font-size: 1.1rem; color: #666;">
-      Haben Sie Fragen oder benötigen Sie eine Beratung? Wir sind für Sie da und freuen uns auf Ihre Nachricht!
-    </p>
-    
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0;">
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <h3 style="color: #023e8a; margin-bottom: 1.5rem;">📝 Nachricht senden</h3>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Vollständiger Name *</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-Mail-Adresse *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Telefonnummer</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="form-group">
-            <label for="service">Interessierte Dienstleistung</label>
-            <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid rgba(0,180,216,0.2); border-radius: 15px; font-family: 'Inter', sans-serif;">
-              <option value="">Bitte wählen...</option>
-              <option value="ambulante-pflege">Ambulante Pflege</option>
-              <option value="hauswirtschaft">Hauswirtschaftliche Hilfe</option>
-              <option value="alltagsbegleitung">Begleitung im Alltag</option>
-              <option value="beratung">Kostenlose Beratung</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Ihre Nachricht *</label>
-            <textarea id="message" name="message" placeholder="Beschreiben Sie Ihre Bedürfnisse..." required></textarea>
-          </div>
-          <button type="submit" class="btn-cool btn-primary" style="width: 100%;"><span class="icon">📤</span>Nachricht senden</button>
-        </form>
-      </div>
-      
-      <!-- Contact Info -->
-      <div>
-        <h3 style="color: #023e8a; margin-bottom: 1.5rem;">📞 Direkte Kontakte</h3>
-        <div style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,180,216,0.1); margin-bottom: 2rem;">
-          <div style="margin-bottom: 1.5rem;">
-            <h4>📱 Telefon & WhatsApp</h4>
-            <p style="margin: 0.5rem 0;"><strong>+49 123 456 789</strong></p>
-            <p style="color: #666; font-size: 0.9rem;">Mo-Fr: 8:00-18:00 Uhr<br>Sa: 9:00-14:00 Uhr</p>
-            <a href="tel:+49123456789" class="btn-cool btn-contact" style="margin-right: 1rem;"><span class="icon">📞</span>Anrufen</a>
-            <a href="https://wa.me/49123456789" target="_blank" class="btn-cool btn-success"><span class="icon">💬</span>WhatsApp</a>
-          </div>
-          
-          <div style="margin-bottom: 1.5rem;">
-            <h4>✉️ E-Mail</h4>
-            <p style="margin: 0.5rem 0;"><strong>info@sannovia-pflege.de</strong></p>
-            <p style="color: #666; font-size: 0.9rem;">Antwort innerhalb von 24 Stunden</p>
-            <a href="mailto:info@sannovia-pflege.de" class="btn-cool btn-primary"><span class="icon">✉️</span>E-Mail senden</a>
-          </div>
-          
-          <div>
-            <h4>🏢 Adresse</h4>
-            <p style="margin: 0.5rem 0;">
-              <strong>Sannovia Pflege GmbH</strong><br>
-              Musterstraße 123<br>
-              12345 Musterstadt<br>
-              Deutschland
-            </p>
-          </div>
-        </div>
-        
-        <div class="map-placeholder">
-          📍 Unser Standort auf der Karte
-        </div>
-      </div>
-    </div>
-    
-    <div style="background: linear-gradient(135deg, #00b4d8, #0077b6); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 3rem 0;">
-      <h3>🚨 Notfall oder dringende Anfrage?</h3>
-      <p style="font-size: 1.1rem; margin: 1rem 0;">Bei akuten Pflegebedürfnissen sind wir auch außerhalb der Geschäftszeiten für Sie da.</p>
-      <a href="tel:+49123456789" class="btn-cool btn-emergency" style="background: white; color: #f368e0; margin: 0.5rem;"><span class="icon">🚨</span>Notfall-Hotline</a>
-      <a href="https://wa.me/49123456789" target="_blank" class="btn-cool" style="background: rgba(255,255,255,0.9); color: #0072ff; margin: 0.5rem;"><span class="icon">💬</span>24/7 WhatsApp</a>
-    </div>
+  <section style="margin-top:100px; text-align: center;">
+    <h2 style="font-size: 2.5rem; color: #023e8a;">Kontakt</h2>
+    <p style="font-size: 1.2rem; margin: 2rem 0;">Rufen Sie uns an: <strong>+49 123 456 789</strong></p>
+    <a href="tel:+49123456789" class="btn-cool btn-primary">📞 Jetzt anrufen</a>
   </section>
 
-  <footer>
-    <p>© 2025 Sannovia Pflege – Alle Rechte vorbehalten.</p>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
