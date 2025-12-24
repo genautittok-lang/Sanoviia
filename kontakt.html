@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt - Sannovia Pflege</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Logo">
-        Sannovia
+        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Pflege">
+        <span class="logo-text">Sannovia</span>
       </a>
+      
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="ua">UA</button>
+        <button class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -25,40 +34,80 @@
   <div class="nav-modal" id="navModal">
     <div class="nav-modal-content">
       <div class="nav-modal-links">
-        <a href="index.html">🏠 Startseite</a>
-        <a href="leistungen.html">⚕️ Leistungen</a>
-        <a href="ueber-uns.html">👥 Über uns</a>
-        <a href="kontakt.html">📞 Kontakt</a>
+        <a href="index.html" data-i18n="nav.home">Startseite</a>
+        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+        <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
       </div>
     </div>
   </div>
 
-  <a href="#" class="featured-badge" onclick="toggleChat()">
-    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI Icon">
-    <span>AI Помічник</span>
-  </a>
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content">
+      <h1 data-i18n="contact.title">Kontakt</h1>
+      <p>Wir sind für Sie da — nehmen Sie Kontakt auf!</p>
+    </div>
+  </section>
 
-  <!-- Chat Window -->
+  <section class="section">
+    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 900px; margin: 0 auto;">
+      <div class="service-card" style="text-align: center;">
+        <div class="service-icon">📞</div>
+        <h3 data-i18n="contact.phone">Telefon</h3>
+        <p style="font-size: 1.3rem; font-weight: 700; color: var(--primary);">+49 123 456 789</p>
+        <p style="color: #666; margin-top: 0.5rem;">Mo-Fr: 8:00-18:00<br>Sa: 9:00-14:00</p>
+        <a href="tel:+49123456789" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.cta">Jetzt anrufen</a>
+      </div>
+      
+      <div class="service-card" style="text-align: center;">
+        <div class="service-icon">✉️</div>
+        <h3 data-i18n="contact.email">E-Mail</h3>
+        <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">info@sannovia-pflege.de</p>
+        <p style="color: #666; margin-top: 0.5rem;">Antwort innerhalb<br>von 24 Stunden</p>
+        <a href="mailto:info@sannovia-pflege.de" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">E-Mail senden</a>
+      </div>
+      
+      <div class="service-card" style="text-align: center;">
+        <div class="service-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">+49 123 456 789</p>
+        <p style="color: #666; margin-top: 0.5rem;">Schnelle Antworten<br>rund um die Uhr</p>
+        <a href="https://wa.me/49123456789" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
+  </footer>
+
+  <div class="ai-badge" onclick="toggleChat()">
+    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+    <span data-i18n="chat.title">AI Assistent</span>
+  </div>
+
   <div class="chat-window" id="chatWindow">
     <div class="chat-header">
-      <span>🤖 AI Помічник Sannovia</span>
-      <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">×</button>
+      <div class="chat-header-info">
+        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+        <div class="chat-header-text">
+          <h4 data-i18n="chat.title">AI Assistent</h4>
+          <span>Sannovia Pflege</span>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">×</button>
     </div>
     <div class="chat-messages" id="chatMessages">
-      <div class="message bot">Привіт! Я ваш AI помічник. Я можу розповісти про послуги Sannovia Pflege або дати загальні поради про ліки. <br><br><b>Важливо:</b> Я не ставлю діагнозів, лише надаю інформаційну підтримку.</div>
+      <div class="message bot" data-i18n="chat.welcome">Hallo! Ich bin Ihr AI-Assistent.</div>
     </div>
+    <div class="chat-disclaimer" data-i18n="chat.disclaimer">Kein Ersatz für ärztliche Beratung</div>
     <div class="chat-input-area">
-      <input type="text" id="userInput" placeholder="Напишіть ваше питання..." onkeypress="handleKey(event)">
+      <input type="text" id="userInput" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
       <button onclick="sendMessage()">➤</button>
     </div>
   </div>
 
-  <section style="margin-top:100px; text-align: center;">
-    <h2 style="font-size: 2.5rem; color: #023e8a;">Kontakt</h2>
-    <p style="font-size: 1.2rem; margin: 2rem 0;">Rufen Sie uns an: <strong>+49 123 456 789</strong></p>
-    <a href="tel:+49123456789" class="btn-cool btn-primary">📞 Jetzt anrufen</a>
-  </section>
-
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

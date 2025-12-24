@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leistungen - Sannovia Pflege</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Logo">
-        Sannovia
+        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Pflege">
+        <span class="logo-text">Sannovia</span>
       </a>
+      
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="ua">UA</button>
+        <button class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -25,52 +34,80 @@
   <div class="nav-modal" id="navModal">
     <div class="nav-modal-content">
       <div class="nav-modal-links">
-        <a href="index.html">🏠 Startseite</a>
-        <a href="leistungen.html">⚕️ Leistungen</a>
-        <a href="ueber-uns.html">👥 Über uns</a>
-        <a href="kontakt.html">📞 Kontakt</a>
+        <a href="index.html" data-i18n="nav.home">Startseite</a>
+        <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+        <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
       </div>
     </div>
   </div>
 
-  <a href="#" class="featured-badge" onclick="toggleChat()">
-    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI Icon">
-    <span>AI Помічник</span>
-  </a>
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content">
+      <h1 data-i18n="services.title">Unsere Leistungen</h1>
+      <p>Professionelle medizinische Versorgung auf höchstem Niveau</p>
+    </div>
+  </section>
 
-  <!-- Chat Window -->
-  <div class="chat-window" id="chatWindow">
-    <div class="chat-header">
-      <span>🤖 AI Помічник Sannovia</span>
-      <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">×</button>
-    </div>
-    <div class="chat-messages" id="chatMessages">
-      <div class="message bot">Привіт! Я ваш AI помічник. Я можу розповісти про послуги Sannovia Pflege або дати загальні поради про ліки. <br><br><b>Важливо:</b> Я не ставлю діагнозів, лише надаю інформаційну підтримку.</div>
-    </div>
-    <div class="chat-input-area">
-      <input type="text" id="userInput" placeholder="Напишіть ваше питання..." onkeypress="handleKey(event)">
-      <button onclick="sendMessage()">➤</button>
-    </div>
-  </div>
-
-  <section style="margin-top:100px;">
-    <h2 style="text-align:center; font-size: 2.5rem; color: #023e8a;">Unsere Leistungen</h2>
-    <div class="services">
-      <div class="service-card-enhanced">
-        <h3>💉 Behandlungspflege</h3>
-        <p>Verbandswechsel, Injektionen & Infusionen.</p>
+  <section class="section">
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">💉</div>
+        <h3 data-i18n="services.treatment.title">Behandlungspflege</h3>
+        <p data-i18n="services.treatment.desc">Professionelle medizinische Versorgung nach SGB V direkt bei Ihnen zu Hause.</p>
       </div>
-      <div class="service-card-enhanced">
-        <h3>📟 Medizintechnik</h3>
-        <p>Betreuung von LVAD-Systemen & Monitoring.</p>
+      
+      <div class="service-card">
+        <div class="service-icon">📟</div>
+        <h3 data-i18n="services.tech.title">Medizintechnik</h3>
+        <p data-i18n="services.tech.desc">Spezialisierte Betreuung für LVAD-Systeme und Monitoring.</p>
       </div>
-      <div class="service-card-enhanced">
-        <h3>🚨 Notfallversorgung</h3>
-        <p>24/7 Rufbereitschaft & Krisenmanagement.</p>
+      
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3 data-i18n="services.support.title">Psychosoziale Begleitung</h3>
+        <p data-i18n="services.support.desc">Empathische Unterstützung für Patienten und Angehörige.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">🚨</div>
+        <h3 data-i18n="services.emergency.title">Notfallversorgung</h3>
+        <p data-i18n="services.emergency.desc">24/7 Rufbereitschaft und Krisenmanagement.</p>
       </div>
     </div>
   </section>
 
+  <footer>
+    <p>© 2025 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
+  </footer>
+
+  <div class="ai-badge" onclick="toggleChat()">
+    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+    <span data-i18n="chat.title">AI Assistent</span>
+  </div>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+        <div class="chat-header-text">
+          <h4 data-i18n="chat.title">AI Assistent</h4>
+          <span>Sannovia Pflege</span>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot" data-i18n="chat.welcome">Hallo! Ich bin Ihr AI-Assistent.</div>
+    </div>
+    <div class="chat-disclaimer" data-i18n="chat.disclaimer">Kein Ersatz für ärztliche Beratung</div>
+    <div class="chat-input-area">
+      <input type="text" id="userInput" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
