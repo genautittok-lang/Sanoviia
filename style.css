@@ -687,8 +687,14 @@ footer p {
     padding: 0.6rem 1rem;
   }
   
-  .lang-switcher {
+  header .lang-switcher {
     display: none;
+  }
+  
+  .nav-modal .lang-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .hero {
