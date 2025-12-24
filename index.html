@@ -11,7 +11,7 @@
   <header>
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Logo">
         Sannovia
       </a>
       <div class="hamburger" onclick="toggleMenu()">
@@ -22,7 +22,6 @@
     </nav>
   </header>
 
-  <!-- Premium Nav Modal -->
   <div class="nav-modal" id="navModal">
     <div class="nav-modal-content">
       <div class="nav-modal-links">
@@ -31,52 +30,56 @@
         <a href="ueber-uns.html">👥 Über uns</a>
         <a href="kontakt.html">📞 Kontakt</a>
       </div>
-      <div class="language-switcher-modal">
-        <a href="#" class="lang-btn active">DE</a>
-        <a href="#" class="lang-btn">EN</a>
-        <a href="#" class="lang-btn">RU</a>
-        <a href="#" class="lang-btn">AR</a>
-      </div>
     </div>
   </div>
 
-  <a href="#" class="featured-badge">
-    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Badge Icon">
-    <span>Sannovia</span>
-  </a>
+  <!-- AI Assistant Badge -->
+  <div class="featured-badge" onclick="toggleChat()">
+    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI Icon">
+    <span>AI Помічник</span>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <span>🤖 AI Помічник Sannovia</span>
+      <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">Привіт! Я ваш AI помічник. Я можу розповісти про послуги Sannovia Pflege або дати загальні поради про ліки. <br><br><b>Важливо:</b> Я не ставлю діагнозів, лише надаю інформаційну підтримку.</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="userInput" placeholder="Напишіть ваше питання..." onkeypress="handleKey(event)">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
 
   <section class="hero">
-    <h1>Willkommen bei Sannovia Pflege</h1>
-    <p>Spezialisierte medizinische Versorgung & psychologische Begleitung im häuslichen Umfeld.</p>
-    <div class="hero-btns">
-      <a href="leistungen.html" class="btn-cool btn-primary">⚕️ Leistungen</a>
-      <a href="kontakt.html" class="btn-cool btn-contact">💬 Kontakt</a>
+    <h1>Häusliche Pflege mit Herz</h1>
+    <p>Professionelle medizinische Versorgung und empathische Begleitung in Hannover.</p>
+    <div style="display:flex; gap:15px; margin-top:20px;">
+      <a href="leistungen.html" class="btn-cool btn-primary">Unsere Leistungen</a>
+      <a href="kontakt.html" class="btn-cool btn-contact">Kontakt</a>
     </div>
   </section>
 
-  <section>
-    <h2>Warum uns wählen?</h2>
-    <div class="services">
-      <div class="service-card-enhanced">
-        <span class="service-icon">👨‍⚕️</span>
-        <h3>Fachkompetenz</h3>
-        <p>Expertise in LVAD-Systemen & komplexer Medizintechnik.</p>
-      </div>
-      <div class="service-card-enhanced">
-        <span class="service-icon">🤝</span>
-        <h3>Empathie</h3>
-        <p>Psychosoziale Unterstützung als Herzstück unserer Pflege.</p>
-      </div>
-      <div class="service-card-enhanced">
-        <span class="service-icon">🌍</span>
-        <h3>Kulturalität</h3>
-        <p>Mehrsprachige Betreuung mit Respekt & Würde.</p>
-      </div>
+  <section class="services">
+    <div class="service-card-enhanced">
+      <h3>⚕️ Behandlungspflege</h3>
+      <p>Medizinische Versorgung nach SGB V direkt bei Ihnen zu Hause.</p>
+    </div>
+    <div class="service-card-enhanced">
+      <h3>📟 Medizintechnik</h3>
+      <p>Spezialisierte Betreuung für LVAD-Systeme und Monitoring.</p>
+    </div>
+    <div class="service-card-enhanced">
+      <h3>🤝 Begleitung</h3>
+      <p>Psychosoziale Unterstützung für Patienten und Angehörige.</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Sannovia Pflege – Hannover & Umgebung</p>
+    <p>© 2025 Sannovia Pflege</p>
   </footer>
   <script src="script.js"></script>
 </body>

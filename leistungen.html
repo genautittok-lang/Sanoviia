@@ -11,7 +11,7 @@
   <header>
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Logo">
         Sannovia
       </a>
       <div class="hamburger" onclick="toggleMenu()">
@@ -33,10 +33,25 @@
     </div>
   </div>
 
-  <a href="#" class="featured-badge">
-    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Badge Icon">
-    <span>Sannovia</span>
+  <a href="#" class="featured-badge" onclick="toggleChat()">
+    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI Icon">
+    <span>AI Помічник</span>
   </a>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <span>🤖 AI Помічник Sannovia</span>
+      <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">Привіт! Я ваш AI помічник. Я можу розповісти про послуги Sannovia Pflege або дати загальні поради про ліки. <br><br><b>Важливо:</b> Я не ставлю діагнозів, лише надаю інформаційну підтримку.</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="userInput" placeholder="Напишіть ваше питання..." onkeypress="handleKey(event)">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
 
   <section style="margin-top:100px;">
     <h2 style="text-align:center; font-size: 2.5rem; color: #023e8a;">Unsere Leistungen</h2>
