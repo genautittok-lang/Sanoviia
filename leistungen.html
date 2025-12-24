@@ -10,7 +10,10 @@
 <body class="services-page">
   <header>
     <nav>
-      <div class="logo"><strong>Sannovia Pflege</strong></div>
+      <a href="index.html" class="logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
+        Sannovia Pflege
+      </a>
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -23,51 +26,85 @@
       <a href="leistungen.html">⚕️ Leistungen</a>
       <a href="ueber-uns.html">👥 Über uns</a>
       <a href="kontakt.html">📞 Kontakt</a>
+      <div class="language-switcher">
+        <a href="#" class="lang-btn active">DE</a>
+        <a href="#" class="lang-btn">EN</a>
+        <a href="#" class="lang-btn">RU</a>
+        <a href="#" class="lang-btn">AR</a>
+      </div>
     </div>
   </header>
 
   <section style="margin-top:100px;">
-    <h2>Unsere Leistungen</h2>
-    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem; color: #666;">Professionelle Pflege und Betreuung in vertrauter Umgebung. Wir bieten individuelle Lösungen für jeden Bedarf.</p>
+    <h2>Unsere medizinischen Leistungen</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem; color: #666;">
+      Spezialisierte Behandlungspflege (SGB V) und medizinische Versorgung auf höchstem Niveau direkt bei Ihnen zu Hause.
+    </p>
     
     <div class="services">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80" alt="Pflege zu Hause">
-        <h3>🏥 Ambulante Pflege</h3>
-        <p><strong>Medizinische Grundpflege:</strong></p>
-        <ul style="text-align: left; margin: 1rem 0;">
-          <li>Körperpflege und Hygiene</li>
-          <li>Medikamentengabe</li>
-          <li>Wundversorgung</li>
-          <li>Mobilisation</li>
+        <h3>💉 Behandlungspflege</h3>
+        <ul class="medical-list">
+          <li>Sterile Verbandswechsel (Wunden, LVAD-Kabel)</li>
+          <li>Injektionen (i.m., i.v., s.c.) & Infusionen</li>
+          <li>Blutentnahme für Laboranalysen</li>
+          <li>Katheter-, Stoma- & Drainagenmanagement</li>
+          <li>Blutzuckerkontrolle & Insulin</li>
         </ul>
-        <a href="kontakt.html" class="btn-cool btn-primary"><span class="icon">📋</span>Beratung anfordern</a>
+        <a href="kontakt.html" class="btn-cool btn-primary"><span class="icon">📋</span>Termin buchen</a>
       </div>
       
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1588776814546-ec7d7c64acb3?auto=format&fit=crop&w=600&q=80" alt="Hauswirtschaftliche Hilfe">
-        <h3>🏠 Hauswirtschaftliche Hilfe</h3>
-        <p><strong>Unterstützung im Haushalt:</strong></p>
-        <ul style="text-align: left; margin: 1rem 0;">
-          <li>Einkaufen und Besorgungen</li>
-          <li>Kochen und Mahlzeitenzubereitung</li>
-          <li>Reinigung und Wäschepflege</li>
-          <li>Gartenpflege</li>
+        <h3>📟 Medizintechnik</h3>
+        <ul class="medical-list">
+          <li>Betreuung von LVAD-Systemen</li>
+          <li>Bedienung von Infusionspumpen</li>
+          <li>Monitoring von Vitalparametern</li>
+          <li>Defibrillator LIFEPAK 20e</li>
+          <li>Sauerstoffsättigung & Pulsoxymetrie</li>
         </ul>
-        <a href="kontakt.html" class="btn-cool btn-success"><span class="icon">ℹ️</span>Mehr erfahren</a>
+        <a href="kontakt.html" class="btn-cool btn-success"><span class="icon">⚙️</span>Technik-Check</a>
       </div>
       
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1580281657521-4c8e1c3bfa0c?auto=format&fit=crop&w=600&q=80" alt="Alltagsbegleitung">
-        <h3>👥 Begleitung im Alltag</h3>
-        <p><strong>Sozialer Beistand:</strong></p>
-        <ul style="text-align: left; margin: 1rem 0;">
-          <li>Arztbesuche und Termine</li>
-          <li>Spaziergänge und Aktivitäten</li>
-          <li>Gespräche und Gesellschaft</li>
-          <li>Freizeitgestaltung</li>
+        <h3>🚨 Notfallversorgung</h3>
+        <ul class="medical-list">
+          <li>Kurzfristige Einsätze bei Notfällen</li>
+          <li>Monitoring bei Zustandsverschlechterung</li>
+          <li>Erste Hilfe bei LVAD-Störungen</li>
+          <li>Professionelles Krisenmanagement</li>
+          <li>Beratung & Überleitung zur Klinik</li>
         </ul>
-        <a href="kontakt.html" class="btn-cool btn-contact"><span class="icon">📅</span>Terminvereinbarung</a>
+        <a href="tel:+49123456789" class="btn-cool btn-emergency"><span class="icon">📞</span>Notfall-Hotline</a>
+      </div>
+    </div>
+
+    <div class="billing-info">
+      <h4>💳 Abrechnung & Kosten</h4>
+      <p>Die Abrechnung unserer Leistungen ist über alle <strong>Pflege- und Krankenkassen</strong> möglich:</p>
+      <ul>
+        <li>Behandlungspflege nach ärztlicher Verordnung (§ 37 SGB V)</li>
+        <li>Pflegesachleistungen im Rahmen des SGB XI</li>
+      </ul>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 4rem;">Beherrschtes Equipment</h3>
+    <div class="equipment-grid">
+      <div class="equipment-item">
+        <h4>GE CARESCAPE V100</h4>
+        <p>Multimessgeräte Vitalparameter</p>
+      </div>
+      <div class="equipment-item">
+        <h4>Fresenius Applix Smart D</h4>
+        <p>Präzise Infusionspumpen</p>
+      </div>
+      <div class="equipment-item">
+        <h4>Medela Thopaz+</h4>
+        <p>Moderne Dauerdrainagen</p>
+      </div>
+      <div class="equipment-item">
+        <h4>Genius 3</h4>
+        <p>Strahlungsthermometer</p>
       </div>
     </div>
     
