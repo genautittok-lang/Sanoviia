@@ -613,6 +613,62 @@ nav {
   box-shadow: 0 5px 20px rgba(42, 157, 143, 0.4);
 }
 
+/* Detail Service Cards */
+.detail-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-card {
+  text-align: left;
+}
+
+.detail-subtitle {
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.service-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+body[dir="rtl"] .detail-card {
+  text-align: right;
+}
+
+body[dir="rtl"] .service-list li {
+  padding-left: 0;
+  padding-right: 1.8rem;
+}
+
+body[dir="rtl"] .service-list li::before {
+  left: auto;
+  right: 0;
+}
+
 /* Footer */
 footer {
   background: var(--secondary);

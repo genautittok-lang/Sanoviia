@@ -17,20 +17,37 @@ const translations = {
       subtitle: "Individuelle Betreuung auf höchstem Niveau",
       subtitlePage: "Professionelle medizinische Versorgung auf höchstem Niveau",
       treatment: {
-        title: "Behandlungspflege",
-        desc: "Professionelle medizinische Versorgung nach SGB V direkt bei Ihnen zu Hause. Verbandswechsel, Injektionen, Infusionen und mehr."
+        title: "Behandlungspflege nach SGB V",
+        subtitle: "(ärztlich verordnet)",
+        desc: "Professionelle medizinische Versorgung nach SGB V direkt bei Ihnen zu Hause. Verbandswechsel, Injektionen, Infusionen und mehr.",
+        item1: "Professioneller Verbandswechsel (inkl. postoperativer Wundversorgung und Dekubitusbehandlung, sterile LVAD-Verbandwechsel)",
+        item2: "Verabreichung von Injektionen (subkutan, intramuskulär, intravenös)",
+        item3: "Infusionstherapie im häuslichen Umfeld",
+        item4: "Blutzuckermessung und Insulinapplikation",
+        item5: "Versorgung von Kathetern, Stoma, Drainagen und PEG-Sonden",
+        item6: "Kontrolle von Vitalparametern (Blutdruck, Puls, Sauerstoffsättigung)",
+        item7: "Medikamentengabe und Überwachung",
+        item8: "Betreuung von Patienten mit implantierten Herzunterstützungssystemen (LVAD) und Akkuwechsel"
       },
       tech: {
         title: "Medizintechnik",
         desc: "Spezialisierte Betreuung für LVAD-Systeme, Infusionspumpen und kontinuierliches Monitoring der Vitalparameter."
       },
       support: {
-        title: "Psychosoziale Begleitung",
-        desc: "Empathische Unterstützung für Patienten und Angehörige bei psychischer Belastung und im Alltag."
+        title: "Psychosoziale Beratung und Begleitung",
+        desc: "Empathische Unterstützung für Patienten und Angehörige bei psychischer Belastung und im Alltag.",
+        item1: "Psychologische Unterstützung für Pflegebedürftige und Angehörige im Umgang mit Erkrankungen und Pflegealltag",
+        item2: "Beratung bei psychischer Belastung, Stress, Angstzuständen oder Isolation",
+        item3: "Ressourcenorientierte Gespräche zur Förderung des Wohlbefindens",
+        item4: "Individuelle Begleitung in schwierigen Lebenssituationen"
       },
       emergency: {
         title: "Notfallversorgung",
         desc: "24/7 Rufbereitschaft für kurzfristige Einsätze und professionelles Krisenmanagement."
+      },
+      private: {
+        title: "Private Zahlungsoptionen",
+        desc: "Neben der Abrechnung über die Krankenkasse bieten wir auch private Zahlungsmöglichkeiten an. Sprechen Sie uns für individuelle Angebote an."
       }
     },
     about: {
@@ -91,20 +108,37 @@ const translations = {
       subtitle: "Individual care at the highest level",
       subtitlePage: "Professional medical care at the highest level",
       treatment: {
-        title: "Treatment Care",
-        desc: "Professional medical care according to SGB V directly at your home. Wound dressing, injections, infusions and more."
+        title: "Treatment Care according to SGB V",
+        subtitle: "(physician-prescribed)",
+        desc: "Professional medical care according to SGB V directly at your home. Wound dressing, injections, infusions and more.",
+        item1: "Professional wound dressing changes (incl. post-operative wound care and pressure ulcer treatment, sterile LVAD dressing changes)",
+        item2: "Administration of injections (subcutaneous, intramuscular, intravenous)",
+        item3: "Infusion therapy in the home environment",
+        item4: "Blood glucose monitoring and insulin administration",
+        item5: "Care for catheters, stomas, drains and PEG tubes",
+        item6: "Monitoring of vital parameters (blood pressure, pulse, oxygen saturation)",
+        item7: "Medication administration and monitoring",
+        item8: "Care for patients with implanted heart assist systems (LVAD) and battery replacement"
       },
       tech: {
         title: "Medical Technology",
         desc: "Specialized care for LVAD systems, infusion pumps and continuous vital parameter monitoring."
       },
       support: {
-        title: "Psychosocial Support",
-        desc: "Empathetic support for patients and relatives dealing with psychological stress and daily life."
+        title: "Psychosocial Counseling and Support",
+        desc: "Empathetic support for patients and relatives dealing with psychological stress and daily life.",
+        item1: "Psychological support for care recipients and relatives in dealing with illnesses and daily care routines",
+        item2: "Counseling for psychological stress, anxiety, or isolation",
+        item3: "Resource-oriented conversations to promote well-being",
+        item4: "Individual support in difficult life situations"
       },
       emergency: {
         title: "Emergency Care",
         desc: "24/7 on-call service for short-notice deployments and professional crisis management."
+      },
+      private: {
+        title: "Private Payment Options",
+        desc: "In addition to billing through health insurance, we also offer private payment options. Contact us for individual offers."
       }
     },
     about: {
@@ -165,20 +199,37 @@ const translations = {
       subtitle: "Индивидуальный уход на высшем уровне",
       subtitlePage: "Профессиональная медицинская помощь на высшем уровне",
       treatment: {
-        title: "Лечебный уход",
-        desc: "Профессиональная медицинская помощь по SGB V прямо у вас дома. Перевязки, инъекции, инфузии и многое другое."
+        title: "Лечебный уход по SGB V",
+        subtitle: "(по назначению врача)",
+        desc: "Профессиональная медицинская помощь по SGB V прямо у вас дома. Перевязки, инъекции, инфузии и многое другое.",
+        item1: "Профессиональная смена повязок (вкл. послеоперационный уход за ранами и лечение пролежней, стерильная смена LVAD-повязок)",
+        item2: "Введение инъекций (подкожно, внутримышечно, внутривенно)",
+        item3: "Инфузионная терапия на дому",
+        item4: "Измерение уровня сахара в крови и введение инсулина",
+        item5: "Уход за катетерами, стомами, дренажами и PEG-зондами",
+        item6: "Контроль жизненных показателей (артериальное давление, пульс, насыщение кислородом)",
+        item7: "Выдача и контроль приёма лекарств",
+        item8: "Уход за пациентами с имплантированными системами поддержки сердца (LVAD) и замена аккумуляторов"
       },
       tech: {
         title: "Медицинская техника",
         desc: "Специализированный уход за системами LVAD, инфузионными насосами и постоянный мониторинг жизненных показателей."
       },
       support: {
-        title: "Психосоциальная поддержка",
-        desc: "Эмпатичная поддержка пациентов и родственников при психологических нагрузках и в повседневной жизни."
+        title: "Психосоциальное консультирование и сопровождение",
+        desc: "Эмпатичная поддержка пациентов и родственников при психологических нагрузках и в повседневной жизни.",
+        item1: "Психологическая поддержка нуждающихся в уходе и их родственников в преодолении болезней и повседневного ухода",
+        item2: "Консультирование при психологических нагрузках, стрессе, тревожности или изоляции",
+        item3: "Ресурсо-ориентированные беседы для улучшения самочувствия",
+        item4: "Индивидуальное сопровождение в сложных жизненных ситуациях"
       },
       emergency: {
         title: "Экстренная помощь",
         desc: "Круглосуточная готовность для срочных вызовов и профессиональное кризисное управление."
+      },
+      private: {
+        title: "Частные варианты оплаты",
+        desc: "Помимо расчёта через страховую компанию, мы также предлагаем частные варианты оплаты. Свяжитесь с нами для индивидуальных предложений."
       }
     },
     about: {
@@ -239,20 +290,37 @@ const translations = {
       subtitle: "Індивідуальний догляд на найвищому рівні",
       subtitlePage: "Професійна медична допомога на найвищому рівні",
       treatment: {
-        title: "Лікувальний догляд",
-        desc: "Професійна медична допомога за SGB V прямо у вас вдома. Перев'язки, ін'єкції, інфузії та багато іншого."
+        title: "Лікувальний догляд за SGB V",
+        subtitle: "(за призначенням лікаря)",
+        desc: "Професійна медична допомога за SGB V прямо у вас вдома. Перев'язки, ін'єкції, інфузії та багато іншого.",
+        item1: "Професійна зміна пов'язок (вкл. післяопераційний догляд за ранами та лікування пролежнів, стерильна зміна LVAD-пов'язок)",
+        item2: "Введення ін'єкцій (підшкірно, внутрішньом'язово, внутрішньовенно)",
+        item3: "Інфузійна терапія вдома",
+        item4: "Вимірювання рівня цукру в крові та введення інсуліну",
+        item5: "Догляд за катетерами, стомами, дренажами та PEG-зондами",
+        item6: "Контроль життєвих показників (артеріальний тиск, пульс, насичення киснем)",
+        item7: "Видача та контроль прийому ліків",
+        item8: "Догляд за пацієнтами з імплантованими системами підтримки серця (LVAD) та заміна акумуляторів"
       },
       tech: {
         title: "Медична техніка",
         desc: "Спеціалізований догляд за системами LVAD, інфузійними помпами та постійний моніторинг життєвих показників."
       },
       support: {
-        title: "Психосоціальна підтримка",
-        desc: "Емпатійна підтримка пацієнтів та родичів при психологічному навантаженні та в повсякденному житті."
+        title: "Психосоціальне консультування та супровід",
+        desc: "Емпатійна підтримка пацієнтів та родичів при психологічному навантаженні та в повсякденному житті.",
+        item1: "Психологічна підтримка тих, хто потребує догляду, та їхніх родичів у подоланні хвороб та повсякденного догляду",
+        item2: "Консультування при психологічних навантаженнях, стресі, тривожності або ізоляції",
+        item3: "Ресурсо-орієнтовані бесіди для покращення самопочуття",
+        item4: "Індивідуальний супровід у складних життєвих ситуаціях"
       },
       emergency: {
         title: "Екстрена допомога",
         desc: "Цілодобова готовність для термінових викликів та професійне кризове управління."
+      },
+      private: {
+        title: "Приватні варіанти оплати",
+        desc: "Окрім розрахунку через страхову компанію, ми також пропонуємо приватні варіанти оплати. Зв'яжіться з нами для індивідуальних пропозицій."
       }
     },
     about: {
@@ -313,20 +381,37 @@ const translations = {
       subtitle: "رعاية فردية على أعلى مستوى",
       subtitlePage: "رعاية طبية احترافية على أعلى مستوى",
       treatment: {
-        title: "الرعاية العلاجية",
-        desc: "رعاية طبية احترافية وفقاً لـ SGB V مباشرة في منزلك. تغيير الضمادات والحقن والتسريب وأكثر."
+        title: "الرعاية العلاجية وفقاً لـ SGB V",
+        subtitle: "(بوصفة طبية)",
+        desc: "رعاية طبية احترافية وفقاً لـ SGB V مباشرة في منزلك. تغيير الضمادات والحقن والتسريب وأكثر.",
+        item1: "تغيير الضمادات المهني (بما في ذلك العناية بالجروح بعد العمليات وعلاج قرحة الضغط، تغيير ضمادات LVAD المعقمة)",
+        item2: "إعطاء الحقن (تحت الجلد، داخل العضل، وريدياً)",
+        item3: "العلاج بالتسريب في المنزل",
+        item4: "قياس نسبة السكر في الدم وإعطاء الأنسولين",
+        item5: "العناية بالقسطرة والفغرة والمصارف وأنابيب PEG",
+        item6: "مراقبة العلامات الحيوية (ضغط الدم، النبض، تشبع الأكسجين)",
+        item7: "إعطاء الأدوية ومراقبتها",
+        item8: "رعاية المرضى الذين لديهم أنظمة دعم القلب المزروعة (LVAD) واستبدال البطارية"
       },
       tech: {
         title: "التقنية الطبية",
         desc: "رعاية متخصصة لأنظمة LVAD ومضخات التسريب والمراقبة المستمرة للعلامات الحيوية."
       },
       support: {
-        title: "الدعم النفسي الاجتماعي",
-        desc: "دعم عاطفي للمرضى والأقارب في التعامل مع الضغط النفسي والحياة اليومية."
+        title: "الإرشاد والدعم النفسي الاجتماعي",
+        desc: "دعم عاطفي للمرضى والأقارب في التعامل مع الضغط النفسي والحياة اليومية.",
+        item1: "الدعم النفسي لمن يحتاجون الرعاية وذويهم في التعامل مع الأمراض والرعاية اليومية",
+        item2: "الإرشاد في حالات الضغط النفسي والتوتر والقلق أو العزلة",
+        item3: "محادثات موجهة نحو الموارد لتعزيز الرفاهية",
+        item4: "الدعم الفردي في المواقف الحياتية الصعبة"
       },
       emergency: {
         title: "الرعاية الطارئة",
         desc: "خدمة على مدار الساعة للنشر على المدى القصير وإدارة الأزمات المهنية."
+      },
+      private: {
+        title: "خيارات الدفع الخاص",
+        desc: "بالإضافة إلى الفواتير عبر التأمين الصحي، نقدم أيضاً خيارات الدفع الخاص. تواصل معنا للعروض الفردية."
       }
     },
     about: {
