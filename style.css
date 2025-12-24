@@ -317,14 +317,15 @@ nav {
 }
 
 .btn-accent {
-  background: var(--accent);
-  color: var(--secondary);
-  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary);
+  border: 2px solid var(--primary);
   font-weight: 700;
 }
 
 .btn-accent:hover {
-  background: #d4b45a;
+  background: var(--primary);
+  color: white;
   transform: translateY(-2px);
 }
 
