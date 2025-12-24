@@ -45,7 +45,7 @@
   <section class="hero" style="min-height: 50vh;">
     <div class="hero-content">
       <h1 data-i18n="about.title">Über Sannovia Pflege</h1>
-      <p data-i18n="about.text">Wir sind Ihr vertrauensvoller Partner für professionelle häusliche Pflege in Hannover.</p>
+      <p data-i18n="about.subtitle">Wir sind Ihr vertrauensvoller Partner für professionelle häusliche Pflege in Hannover.</p>
     </div>
   </section>
 
@@ -53,20 +53,20 @@
     <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
       <div class="service-card">
         <div class="service-icon">👨‍⚕️</div>
-        <h3>Fachkompetenz</h3>
-        <p>Examinierte Pflegefachkraft mit 5 Jahren Erfahrung in stationärer und ambulanter Versorgung. Spezialisiert auf komplexe Medizintechnik wie LVAD-Systeme.</p>
+        <h3 data-i18n="about.expertise.title">Fachkompetenz</h3>
+        <p data-i18n="about.expertise.desc">Examinierte Pflegefachkraft mit 5 Jahren Erfahrung in stationärer und ambulanter Versorgung. Spezialisiert auf komplexe Medizintechnik wie LVAD-Systeme.</p>
       </div>
       
       <div class="service-card">
         <div class="service-icon">🌍</div>
-        <h3>Mehrsprachig</h3>
-        <p>Wir bieten kulturell sensible Betreuung in mehreren Sprachen: Deutsch, Englisch, Russisch, Ukrainisch und Arabisch.</p>
+        <h3 data-i18n="about.multilingual.title">Mehrsprachig</h3>
+        <p data-i18n="about.multilingual.desc">Wir bieten kulturell sensible Betreuung in mehreren Sprachen: Deutsch, Englisch, Russisch, Ukrainisch und Arabisch.</p>
       </div>
       
       <div class="service-card">
         <div class="service-icon">❤️</div>
-        <h3>Mit Herz</h3>
-        <p>Bei uns steht der Mensch im Mittelpunkt. Keine Fließbandpflege — wir nehmen uns Zeit für echte, individuelle Zuwendung.</p>
+        <h3 data-i18n="about.heart.title">Mit Herz</h3>
+        <p data-i18n="about.heart.desc">Bei uns steht der Mensch im Mittelpunkt. Keine Fließbandpflege — wir nehmen uns Zeit für echte, individuelle Zuwendung.</p>
       </div>
     </div>
   </section>
@@ -96,7 +96,7 @@
     </div>
     <div class="chat-disclaimer" data-i18n="chat.disclaimer">Kein Ersatz für ärztliche Beratung</div>
     <div class="chat-input-area">
-      <input type="text" id="userInput" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
+      <input type="text" id="userInput" data-i18n-placeholder="chat.placeholder" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
       <button onclick="sendMessage()">➤</button>
     </div>
   </div>

@@ -45,7 +45,7 @@
   <section class="hero" style="min-height: 50vh;">
     <div class="hero-content">
       <h1 data-i18n="contact.title">Kontakt</h1>
-      <p>Wir sind für Sie da — nehmen Sie Kontakt auf!</p>
+      <p data-i18n="contact.subtitle">Wir sind für Sie da — nehmen Sie Kontakt auf!</p>
     </div>
   </section>
 
@@ -55,7 +55,7 @@
         <div class="service-icon">📞</div>
         <h3 data-i18n="contact.phone">Telefon</h3>
         <p style="font-size: 1.3rem; font-weight: 700; color: var(--primary);">+49 123 456 789</p>
-        <p style="color: #666; margin-top: 0.5rem;">Mo-Fr: 8:00-18:00<br>Sa: 9:00-14:00</p>
+        <p style="color: #666; margin-top: 0.5rem;"><span data-i18n="contact.hours">Mo-Fr: 8:00-18:00</span><br><span data-i18n="contact.hoursSat">Sa: 9:00-14:00</span></p>
         <a href="tel:+49123456789" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.cta">Jetzt anrufen</a>
       </div>
       
@@ -63,16 +63,16 @@
         <div class="service-icon">✉️</div>
         <h3 data-i18n="contact.email">E-Mail</h3>
         <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">info@sannovia-pflege.de</p>
-        <p style="color: #666; margin-top: 0.5rem;">Antwort innerhalb<br>von 24 Stunden</p>
-        <a href="mailto:info@sannovia-pflege.de" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">E-Mail senden</a>
+        <p style="color: #666; margin-top: 0.5rem;" data-i18n="contact.responseTime">Antwort innerhalb von 24 Stunden</p>
+        <a href="mailto:info@sannovia-pflege.de" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.emailCta">E-Mail senden</a>
       </div>
       
       <div class="service-card" style="text-align: center;">
         <div class="service-icon">💬</div>
-        <h3>WhatsApp</h3>
+        <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
         <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">+49 123 456 789</p>
-        <p style="color: #666; margin-top: 0.5rem;">Schnelle Antworten<br>rund um die Uhr</p>
-        <a href="https://wa.me/49123456789" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">WhatsApp</a>
+        <p style="color: #666; margin-top: 0.5rem;" data-i18n="contact.quickResponse">Schnelle Antworten rund um die Uhr</p>
+        <a href="https://wa.me/49123456789" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.whatsapp">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -102,7 +102,7 @@
     </div>
     <div class="chat-disclaimer" data-i18n="chat.disclaimer">Kein Ersatz für ärztliche Beratung</div>
     <div class="chat-input-area">
-      <input type="text" id="userInput" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
+      <input type="text" id="userInput" data-i18n-placeholder="chat.placeholder" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
       <button onclick="sendMessage()">➤</button>
     </div>
   </div>

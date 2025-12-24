@@ -28,8 +28,9 @@ function setLanguage(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
   
-  // Set RTL for Arabic
+  // Set RTL for Arabic and update html lang attribute
   document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang === 'ua' ? 'uk' : lang;
   
   // Translate all elements
   if (typeof translations !== 'undefined' && translations[lang]) {
