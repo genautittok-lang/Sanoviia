@@ -85,6 +85,20 @@ const translations = {
       placeholder: "Ihre Frage eingeben...",
       disclaimer: "Kein Ersatz für ärztliche Beratung"
     },
+    booking: {
+      btn: "Termin vereinbaren",
+      title: "Termin vereinbaren",
+      subtitle: "Füllen Sie das Formular aus und wir melden uns bei Ihnen",
+      firstName: "Vorname",
+      firstNamePlaceholder: "Max",
+      lastName: "Nachname",
+      lastNamePlaceholder: "Mustermann",
+      phone: "Telefon",
+      phonePlaceholder: "+49 123 456 789",
+      email: "E-Mail",
+      emailPlaceholder: "ihre@email.de",
+      submit: "Anfrage senden"
+    },
     footer: {
       rights: "Alle Rechte vorbehalten",
       location: "Hannover & Umgebung"
@@ -175,6 +189,20 @@ const translations = {
       welcome: "Hello! I'm your AI assistant. I can provide information about our services and general advice about medications. Important: I do not diagnose, I only provide informational support.",
       placeholder: "Enter your question...",
       disclaimer: "Not a substitute for medical advice"
+    },
+    booking: {
+      btn: "Book Appointment",
+      title: "Book Appointment",
+      subtitle: "Fill out the form and we will contact you",
+      firstName: "First Name",
+      firstNamePlaceholder: "John",
+      lastName: "Last Name",
+      lastNamePlaceholder: "Doe",
+      phone: "Phone",
+      phonePlaceholder: "+49 123 456 789",
+      email: "Email",
+      emailPlaceholder: "your@email.com",
+      submit: "Send Request"
     },
     footer: {
       rights: "All rights reserved",
@@ -267,6 +295,20 @@ const translations = {
       placeholder: "Введите ваш вопрос...",
       disclaimer: "Не заменяет консультацию врача"
     },
+    booking: {
+      btn: "Записаться",
+      title: "Записаться на приём",
+      subtitle: "Заполните форму и мы свяжемся с вами",
+      firstName: "Имя",
+      firstNamePlaceholder: "Иван",
+      lastName: "Фамилия",
+      lastNamePlaceholder: "Иванов",
+      phone: "Телефон",
+      phonePlaceholder: "+49 123 456 789",
+      email: "Эл. почта",
+      emailPlaceholder: "ваша@почта.de",
+      submit: "Отправить заявку"
+    },
     footer: {
       rights: "Все права защищены",
       location: "Ганновер и окрестности"
@@ -358,6 +400,20 @@ const translations = {
       placeholder: "Введіть ваше питання...",
       disclaimer: "Не замінює консультацію лікаря"
     },
+    booking: {
+      btn: "Записатися",
+      title: "Записатися на прийом",
+      subtitle: "Заповніть форму і ми з вами зв'яжемося",
+      firstName: "Ім'я",
+      firstNamePlaceholder: "Іван",
+      lastName: "Прізвище",
+      lastNamePlaceholder: "Іванов",
+      phone: "Телефон",
+      phonePlaceholder: "+49 123 456 789",
+      email: "Ел. пошта",
+      emailPlaceholder: "ваша@пошта.de",
+      submit: "Надіслати заявку"
+    },
     footer: {
       rights: "Всі права захищені",
       location: "Ганновер та околиці"
@@ -448,6 +504,20 @@ const translations = {
       welcome: "مرحباً! أنا مساعدك الذكي. يمكنني تقديم معلومات حول خدماتنا ونصائح عامة حول الأدوية. مهم: أنا لا أشخص، أقدم فقط الدعم المعلوماتي.",
       placeholder: "أدخل سؤالك...",
       disclaimer: "ليس بديلاً عن الاستشارة الطبية"
+    },
+    booking: {
+      btn: "حجز موعد",
+      title: "حجز موعد",
+      subtitle: "املأ النموذج وسنتصل بك",
+      firstName: "الاسم الأول",
+      firstNamePlaceholder: "أحمد",
+      lastName: "الاسم الأخير",
+      lastNamePlaceholder: "محمد",
+      phone: "الهاتف",
+      phonePlaceholder: "+49 123 456 789",
+      email: "البريد الإلكتروني",
+      emailPlaceholder: "بريدك@email.de",
+      submit: "إرسال الطلب"
     },
     footer: {
       rights: "جميع الحقوق محفوظة",

@@ -100,6 +100,50 @@ function initAnimations() {
   });
 }
 
+// Booking System
+function openBooking() {
+  const modal = document.getElementById('bookingModal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeBooking() {
+  const modal = document.getElementById('bookingModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+function submitBooking(e) {
+  e.preventDefault();
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+  const phone = document.getElementById('bookingPhone').value;
+  const email = document.getElementById('bookingEmail').value;
+  
+  const messages = {
+    de: `Vielen Dank, ${firstName}! Wir werden Sie bald kontaktieren.`,
+    en: `Thank you, ${firstName}! We will contact you soon.`,
+    ru: `Спасибо, ${firstName}! Мы скоро с вами свяжемся.`,
+    ua: `Дякуємо, ${firstName}! Ми скоро з вами зв'яжемося.`,
+    ar: `شكراً لك، ${firstName}! سنتصل بك قريباً.`
+  };
+  
+  alert(messages[currentLang] || messages.de);
+  document.getElementById('bookingForm').reset();
+  closeBooking();
+}
+
+// Close booking on outside click
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('booking-modal')) {
+    closeBooking();
+  }
+});
+
 // Chat System
 function toggleChat() {
   const chat = document.getElementById('chatWindow');

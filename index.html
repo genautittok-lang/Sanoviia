@@ -57,6 +57,7 @@
       <div class="hero-buttons">
         <a href="leistungen.html" class="btn btn-primary" data-i18n="hero.cta1">Unsere Leistungen</a>
         <a href="kontakt.html" class="btn btn-outline" data-i18n="hero.cta2">Kontakt aufnehmen</a>
+        <button class="btn btn-accent" onclick="openBooking()" data-i18n="booking.btn">Termin vereinbaren</button>
       </div>
     </div>
   </section>
@@ -119,6 +120,35 @@
     <div class="chat-input-area">
       <input type="text" id="userInput" data-i18n-placeholder="chat.placeholder" placeholder="Ihre Frage eingeben..." onkeypress="handleKey(event)">
       <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-content">
+      <button class="booking-close" onclick="closeBooking()">×</button>
+      <h2 data-i18n="booking.title">Termin vereinbaren</h2>
+      <p data-i18n="booking.subtitle">Füllen Sie das Formular aus und wir melden uns bei Ihnen</p>
+      <form id="bookingForm" onsubmit="submitBooking(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="booking.firstName">Vorname</label>
+            <input type="text" id="firstName" required data-i18n-placeholder="booking.firstNamePlaceholder" placeholder="Max">
+          </div>
+          <div class="form-group">
+            <label data-i18n="booking.lastName">Nachname</label>
+            <input type="text" id="lastName" required data-i18n-placeholder="booking.lastNamePlaceholder" placeholder="Mustermann">
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="booking.phone">Telefon</label>
+          <input type="tel" id="bookingPhone" required data-i18n-placeholder="booking.phonePlaceholder" placeholder="+49 123 456 789">
+        </div>
+        <div class="form-group">
+          <label data-i18n="booking.email">E-Mail</label>
+          <input type="email" id="bookingEmail" required data-i18n-placeholder="booking.emailPlaceholder" placeholder="ihre@email.de">
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" data-i18n="booking.submit">Anfrage senden</button>
+      </form>
     </div>
   </div>
 

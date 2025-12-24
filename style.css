@@ -316,6 +316,138 @@ nav {
   transform: translateY(-5px);
 }
 
+.btn-accent {
+  background: var(--accent);
+  color: var(--secondary);
+  border: none;
+  font-weight: 700;
+}
+
+.btn-accent:hover {
+  background: #d4b45a;
+  transform: translateY(-2px);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Booking Modal */
+.booking-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.booking-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.booking-content {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow);
+  transform: translateY(30px);
+  transition: transform 0.3s ease;
+}
+
+.booking-modal.active .booking-content {
+  transform: translateY(0);
+}
+
+.booking-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(42, 157, 143, 0.1);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.booking-close:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.booking-content h2 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.booking-content > p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(42, 157, 143, 0.1);
+}
+
+@media (max-width: 500px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-content {
+    padding: 1.5rem;
+  }
+}
+
 /* Services Section */
 .section {
   padding: 100px 2rem;
@@ -695,6 +827,20 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  
+  .nav-modal .lang-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .nav-modal .lang-btn.active {
+    background: var(--accent);
+    color: var(--secondary);
+  }
+  
+  .nav-modal .lang-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
   }
   
   .hero {
