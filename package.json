@@ -1,14 +1,15 @@
 {
   "name": "sannovia-pflege",
   "version": "1.0.0",
+  "description": "Healthcare services website",
   "main": "server.js",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.x"
   },
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "openai": "^4.0.0"
+    "openai": "^4.24.1"
   }
 }
