@@ -1,6 +1,7 @@
 {
   "name": "sannovia-pflege",
   "version": "1.0.0",
+  "description": "Healthcare services website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
