@@ -20,11 +20,11 @@ const server = http.createServer((req, res) => {
       try {
         const { message, lang = 'de' } = JSON.parse(body);
         const langPrompts = {
-          de: "Sie sind ein KI-Assistent für die Website Sannovia Pflege (Hannover, Deutschland).",
-          en: "You are an AI assistant for Sannovia Pflege website (Hannover, Germany).",
-          ru: "Вы — AI-ассистент сайта Sannovia Pflege (Ганновер, Германия).",
-          ua: "Ви — AI помічник для сайту Sannovia Pflege (Ганновер, Німеччина).",
-          ar: "أنت مساعد AI لموقع Sannovia Pflege (هانوفر، ألمانيا)."
+          de: "Sie sind ein KI-Assistent für Sannovia Pflege.",
+          en: "You are an AI assistant for Sannovia Pflege.",
+          ru: "Вы — AI-ассистент Sannovia Pflege.",
+          ua: "Ви — AI помічник Sannovia Pflege.",
+          ar: "أنت مساعد AI لـ Sannovia Pflege."
         };
         const systemPrompt = langPrompts[lang] || langPrompts.de;
         const completion = await openai.chat.completions.create({
@@ -43,7 +43,15 @@ const server = http.createServer((req, res) => {
 
   let filePath = '.' + (req.url === '/' ? '/index.html' : req.url);
   const extname = String(path.extname(filePath)).toLowerCase();
-  const mimeTypes = { '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpg', '.jpeg': 'image/jpeg' };
+  const mimeTypes = { 
+    '.js': 'text/javascript', 
+    '.css': 'text/css', 
+    '.json': 'application/json', 
+    '.png': 'image/png', 
+    '.jpg': 'image/jpg', 
+    '.jpeg': 'image/jpeg',
+    '.html': 'text/html'
+  };
   const contentType = mimeTypes[extname] || 'text/html';
 
   fs.readFile(filePath, (error, content) => {
@@ -66,5 +74,5 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
