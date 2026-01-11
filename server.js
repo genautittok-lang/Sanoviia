@@ -85,5 +85,5 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Sannovia Pflege website running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
