@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sannovia Pflege - Professionelle Pflege mit Herz</title>
-  <meta name="description" content="Spezialisierte medizinische Versorgung und empathische Begleitung in Hannover">
+  <title>Sannovia Pflege — Spezialisierte Akademische Pflege in Hannover</title>
+  <meta name="description" content="Ihor Liubchyk, M.Sc., GuK — Spezialisierte Honorarpflege & Case Management in Hannover. Behandlungspflege nach SGB V, LVAD, VAC, PICC-Line.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,10 +12,8 @@
   <header id="header">
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Pflege">
-        <span class="logo-text">Sannovia</span>
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
       </a>
-      
       <div class="lang-switcher">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -23,7 +21,6 @@
         <button class="lang-btn" data-lang="ua">UA</button>
         <button class="lang-btn" data-lang="ar">AR</button>
       </div>
-      
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -37,7 +34,7 @@
       <div class="nav-modal-links">
         <a href="index.html" data-i18n="nav.home">Startseite</a>
         <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+        <a href="ueber-uns.html" data-i18n="nav.about">Über mich</a>
         <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="lang-switcher" style="margin-top: 3rem;">
@@ -52,10 +49,11 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1 data-i18n="hero.title">Professionelle Pflege mit Herz</h1>
-      <p data-i18n="hero.subtitle">Spezialisierte medizinische Versorgung und empathische Begleitung in Hannover und Umgebung</p>
+      <div class="hero-badge">Ihor Liubchyk, M.Sc. | GuK</div>
+      <h1 data-i18n="hero.title">Spezialisierte Akademische Pflege</h1>
+      <p data-i18n="hero.subtitle">Ihor Liubchyk, M.Sc. | Gesundheits- und Krankenpfleger — Honorarpflege & Case Management in Hannover</p>
       <div class="hero-buttons">
-        <a href="leistungen.html" class="btn btn-primary" data-i18n="hero.cta1">Unsere Leistungen</a>
+        <a href="leistungen.html" class="btn btn-primary" data-i18n="hero.cta1">Leistungen ansehen</a>
         <a href="kontakt.html" class="btn btn-outline" data-i18n="hero.cta2">Kontakt aufnehmen</a>
         <button class="btn btn-accent" onclick="openBooking()" data-i18n="booking.btn">Termin vereinbaren</button>
       </div>
@@ -63,49 +61,100 @@
   </section>
 
   <section class="section">
-    <h2 class="section-title" data-i18n="services.title">Unsere Leistungen</h2>
-    <p class="section-subtitle" data-i18n="services.subtitle">Individuelle Betreuung auf höchstem Niveau</p>
-    
+    <h2 class="section-title" data-i18n="services.title">Leistungsportfolio</h2>
+    <p class="section-subtitle" data-i18n="services.subtitle">Akademisch qualifiziert — klinisch erprobt — flexibel verfügbar</p>
+
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">💉</div>
-        <h3 data-i18n="services.treatment.title">Behandlungspflege</h3>
-        <p data-i18n="services.treatment.desc">Professionelle medizinische Versorgung nach SGB V direkt bei Ihnen zu Hause. Verbandswechsel, Injektionen, Infusionen und mehr.</p>
+        <div class="service-icon">🩺</div>
+        <h3 data-i18n="services.treatment.title">Spezialisierte Behandlungspflege (SGB V)</h3>
+        <p data-i18n="services.treatment.desc">LVAD, VAC-Therapie, PICC-Line, Wundmanagement, Injektionen, Infusionen — nach ärztlicher Verordnung.</p>
+        <a href="leistungen.html" class="card-link" data-i18n="services.detailsLink">Details ansehen →</a>
       </div>
-      
+
       <div class="service-card">
-        <div class="service-icon">📟</div>
-        <h3 data-i18n="services.tech.title">Medizintechnik</h3>
-        <p data-i18n="services.tech.desc">Spezialisierte Betreuung für LVAD-Systeme, Infusionspumpen und kontinuierliches Monitoring der Vitalparameter.</p>
+        <div class="service-icon">📋</div>
+        <h3 data-i18n="services.advisory.title">Beratung & Gutachten (§ 37.3 SGB XI)</h3>
+        <p data-i18n="services.advisory.desc">Pflegeberatungseinsätze, Schulung von Angehörigen, akademisches Fallmanagement auf M.Sc.-Niveau.</p>
+        <a href="leistungen.html" class="card-link" data-i18n="services.detailsLink">Details ansehen →</a>
       </div>
-      
+
+      <div class="service-card">
+        <div class="service-icon">🎓</div>
+        <h3 data-i18n="services.why.title">Warum ich?</h3>
+        <p data-i18n="whyShort">M.Sc. Pflegewissenschaft (ZAB-anerkannt) · MHH-Erfahrung HTTG · Staatl. anerkannter GuK · Mehrsprachig</p>
+        <a href="ueber-uns.html" class="card-link" data-i18n="services.qualLink">Qualifikationen →</a>
+      </div>
+
       <div class="service-card">
         <div class="service-icon">🤝</div>
-        <h3 data-i18n="services.support.title">Psychosoziale Begleitung</h3>
-        <p data-i18n="services.support.desc">Empathische Unterstützung für Patienten und Angehörige bei psychischer Belastung und im Alltag.</p>
+        <h3 data-i18n="services.private.title">Kooperationsmodelle</h3>
+        <p data-i18n="services.private.desc">Als Subunternehmer für zugelassene Pflegedienste oder auf privater Basis. Klare Honorarvereinbarungen ohne versteckte Kosten.</p>
+        <a href="kontakt.html" class="card-link" data-i18n="services.contactLink">Kontakt aufnehmen →</a>
       </div>
-      
-      <div class="service-card">
-        <div class="service-icon">🚨</div>
-        <h3 data-i18n="services.emergency.title">Notfallversorgung</h3>
-        <p data-i18n="services.emergency.desc">24/7 Rufbereitschaft für kurzfristige Einsätze und professionelles Krisenmanagement.</p>
+    </div>
+  </section>
+
+  <section class="highlights-section">
+    <div class="highlights-inner">
+      <div class="highlight-item">
+        <div class="highlight-icon">🏥</div>
+        <div class="highlight-text">
+          <strong data-i18n="highlights.mhh">MHH-Erfahrung</strong>
+          <span data-i18n="highlights.mhhDesc">Herz-, Thorax- & Transplantationschirurgie</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">🎓</div>
+        <div class="highlight-text">
+          <strong data-i18n="highlights.msc">M.Sc. Pflegewissenschaft</strong>
+          <span data-i18n="highlights.mscDesc">ZAB-anerkannt | Akademisches Niveau</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">💉</div>
+        <div class="highlight-text">
+          <strong data-i18n="highlights.tech">LVAD · VAC · PICC-Line</strong>
+          <span data-i18n="highlights.techDesc">Spezialisierte Medizintechnik</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">🌍</div>
+        <div class="highlight-text">
+          <strong data-i18n="highlights.multi">Mehrsprachig</strong>
+          <span data-i18n="highlights.multiDesc">DE · UA · RU · EN</span>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege">
+      </div>
+      <div class="footer-info">
+        <p><strong>Ihor Liubchyk, M.Sc., GuK</strong></p>
+        <p>Domagkweg 38, 30627 Hannover</p>
+        <p><a href="tel:+4917632755364">+49 176 32755364</a> · <a href="mailto:info@sannovia-pflege.de">info@sannovia-pflege.de</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
   </footer>
 
   <div class="ai-badge" onclick="toggleChat()">
-    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="AI">
     <span data-i18n="chat.title">AI Assistent</span>
   </div>
 
   <div class="chat-window" id="chatWindow">
     <div class="chat-header">
       <div class="chat-header-info">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia">
         <div class="chat-header-text">
           <h4 data-i18n="chat.title">AI Assistent</h4>
           <span>Sannovia Pflege</span>
@@ -141,7 +190,7 @@
         </div>
         <div class="form-group">
           <label data-i18n="booking.phone">Telefon</label>
-          <input type="tel" id="bookingPhone" required data-i18n-placeholder="booking.phonePlaceholder" placeholder="+49 123 456 789">
+          <input type="tel" id="bookingPhone" required data-i18n-placeholder="booking.phonePlaceholder" placeholder="+49 176 32755364">
         </div>
         <div class="form-group">
           <label data-i18n="booking.email">E-Mail</label>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über uns - Sannovia Pflege</title>
+  <title>Über mich — Ihor Liubchyk M.Sc. | Sannovia Pflege</title>
+  <meta name="description" content="Ihor Liubchyk, M.Sc., GuK — Akademische Pflegefachkraft aus Hannover. MHH-Erfahrung, ZAB-anerkannter Masterabschluss, spezialisiert auf LVAD, VAC, PICC-Line.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +12,8 @@
   <header id="header">
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Pflege">
-        <span class="logo-text">Sannovia</span>
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
       </a>
-      
       <div class="lang-switcher">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -22,7 +21,6 @@
         <button class="lang-btn" data-lang="ua">UA</button>
         <button class="lang-btn" data-lang="ar">AR</button>
       </div>
-      
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -36,7 +34,7 @@
       <div class="nav-modal-links">
         <a href="index.html" data-i18n="nav.home">Startseite</a>
         <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+        <a href="ueber-uns.html" data-i18n="nav.about">Über mich</a>
         <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="lang-switcher" style="margin-top: 3rem;">
@@ -51,46 +49,115 @@
 
   <section class="hero" style="min-height: 50vh;">
     <div class="hero-content">
-      <h1 data-i18n="about.title">Über Sannovia Pflege</h1>
-      <p data-i18n="about.subtitle">Wir sind Ihr vertrauensvoller Partner für professionelle häusliche Pflege in Hannover.</p>
+      <div class="hero-badge" data-i18n="about.badge">Akademische Pflegefachkraft</div>
+      <h1 data-i18n="about.title">Über mich</h1>
+      <p data-i18n="about.subtitle">Ihor Liubchyk, M.Sc. | Gesundheits- und Krankenpfleger</p>
     </div>
   </section>
 
-  <section class="section" style="text-align: center;">
-    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
-      <div class="service-card">
-        <div class="service-icon">👨‍⚕️</div>
-        <h3 data-i18n="about.expertise.title">Fachkompetenz</h3>
-        <p data-i18n="about.expertise.desc">Examinierte Pflegefachkraft mit 5 Jahren Erfahrung in stationärer und ambulanter Versorgung. Spezialisiert auf komplexe Medizintechnik wie LVAD-Systeme.</p>
+  <section class="section">
+    <div class="about-profile-section">
+      <div class="about-profile-image">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege — Ihor Liubchyk">
+        <div class="profile-badges">
+          <span class="profile-badge">M.Sc. Pflegewissenschaft</span>
+          <span class="profile-badge">GuK anerkannt</span>
+          <span class="profile-badge">MHH-Erfahrung</span>
+        </div>
       </div>
-      
+      <div class="about-profile-text">
+        <h2>Ihor Liubchyk, M.Sc., GuK</h2>
+        <p class="about-subtitle-text" data-i18n="about.profileSubtitle">Akademischer Fachkraft für Intensiv- & Behandlungspflege</p>
+        <p data-i18n="about.bio">Mein Name ist Ihor Liubchyk. Ich arbeite als freiberufliche Pflegefachkraft in Hannover und biete spezialisierte Behandlungspflege sowie akademische Beratungsleistungen auf Honorarbasis an.</p>
+        <p style="margin-top: 1rem;" data-i18n="about.bioDetails">Ich habe ein Masterstudium in Pflegewissenschaft absolviert, das von der ZAB offiziell einem deutschen Masterabschluss gleichgestellt wurde. Meine Berufserfahrung umfasst mehrjährige Tätigkeit in der Herz-, Thorax- und Transplantationschirurgie (HTTG) an der Medizinischen Hochschule Hannover (MHH).</p>
+        <div class="profile-contact-row">
+          <a href="tel:+4917632755364" class="btn btn-primary">📞 +49 176 32755364</a>
+          <a href="mailto:info@sannovia-pflege.de" class="btn btn-outline-dark">✉️ info@sannovia-pflege.de</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <h2 class="section-title" data-i18n="about.qualProfile">Qualifikationsprofil</h2>
+    <p class="section-subtitle" data-i18n="about.qualSubtitle">Wissenschaftliche Expertise trifft auf langjährige klinische Praxis</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✅</div>
+        <h3 data-i18n="about.qualification.title">Staatlich anerkannter GuK</h3>
+        <p data-i18n="about.qualification.desc">Anerkennung als Gesundheits- und Krankenpfleger in Deutschland durch das Niedersächsische Landesamt für Soziales, Jugend und Familie.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎓</div>
+        <h3 data-i18n="about.education.title">M.Sc. Pflegewissenschaft</h3>
+        <p data-i18n="about.education.desc">Master of Science in Pflegewissenschaft — ZAB-anerkannt und einem deutschen Masterabschluss gleichgestellt. Verbindet wissenschaftliche Expertise mit klinischer Praxis.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏥</div>
+        <h3 data-i18n="about.expertise.title">Klinische Erfahrung MHH</h3>
+        <p data-i18n="about.expertise.desc">Mehrjährige Berufserfahrung in der Intensivpflege der Herz-, Thorax- und Transplantationschirurgie (HTTG) an der Medizinischen Hochschule Hannover — spezialisiert auf LVAD, VAC und PICC-Line.</p>
+      </div>
+
       <div class="service-card">
         <div class="service-icon">🌍</div>
         <h3 data-i18n="about.multilingual.title">Mehrsprachig</h3>
-        <p data-i18n="about.multilingual.desc">Wir bieten kulturell sensible Betreuung in mehreren Sprachen: Deutsch, Englisch, Russisch, Ukrainisch und Arabisch.</p>
+        <p data-i18n="about.multilingual.desc">Betreuung in mehreren Sprachen: Deutsch, Ukrainisch, Russisch und Englisch — für kulturell sensible und verständliche Kommunikation mit Patienten und Angehörigen.</p>
       </div>
-      
+
+      <div class="service-card">
+        <div class="service-icon">💉</div>
+        <h3 data-i18n="about.additionalTitle">Zusatzkompetenzen</h3>
+        <p data-i18n="about.additionalDesc">Sicherer Umgang mit VAC-Therapie, PICC-Lines und LVAD-Systemen. Hohe fachliche Verantwortung und strukturierte Arbeitsweise.</p>
+      </div>
+
       <div class="service-card">
         <div class="service-icon">❤️</div>
-        <h3 data-i18n="about.heart.title">Mit Herz</h3>
-        <p data-i18n="about.heart.desc">Bei uns steht der Mensch im Mittelpunkt. Keine Fließbandpflege — wir nehmen uns Zeit für echte, individuelle Zuwendung.</p>
+        <h3 data-i18n="about.heart.title">Persönliche Betreuung</h3>
+        <p data-i18n="about.heart.desc">Keine Fließbandpflege — jeder Patient verdient individuelle Zuwendung, fachliche Präzision und menschliche Wärme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="legal-notice-box">
+      <div class="legal-notice-icon">⚖️</div>
+      <div>
+        <h4 data-i18n="legal.title">Rechtlicher Hinweis</h4>
+        <p data-i18n="about.legalNote">Meine Leistungen im Bereich der medizinischen Behandlungspflege erbringe ich ausschließlich als Kooperationspartner (Subunternehmer) für zugelassene Pflegedienste oder Kliniken. Ich verfüge über keine eigene Kassenzulassung. Die Abrechnung erfolgt über den beauftragenden Pflegedienst oder auf privater Basis.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege">
+      </div>
+      <div class="footer-info">
+        <p><strong>Ihor Liubchyk, M.Sc., GuK</strong></p>
+        <p>Domagkweg 38, 30627 Hannover</p>
+        <p><a href="tel:+4917632755364">+49 176 32755364</a> · <a href="mailto:info@sannovia-pflege.de">info@sannovia-pflege.de</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
   </footer>
 
   <div class="ai-badge" onclick="toggleChat()">
-    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="AI">
     <span data-i18n="chat.title">AI Assistent</span>
   </div>
 
   <div class="chat-window" id="chatWindow">
     <div class="chat-header">
       <div class="chat-header-info">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia">
         <div class="chat-header-text">
           <h4 data-i18n="chat.title">AI Assistent</h4>
           <span>Sannovia Pflege</span>

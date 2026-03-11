@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leistungen - Sannovia Pflege</title>
+  <title>Leistungen — Sannovia Pflege | Ihor Liubchyk M.Sc.</title>
+  <meta name="description" content="Spezialisierte Behandlungspflege (SGB V) und Pflegeberatung (§ 37.3 SGB XI) — LVAD, VAC, PICC-Line, Wundmanagement in Hannover.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +12,8 @@
   <header id="header">
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Pflege">
-        <span class="logo-text">Sannovia</span>
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
       </a>
-      
       <div class="lang-switcher">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -22,7 +21,6 @@
         <button class="lang-btn" data-lang="ua">UA</button>
         <button class="lang-btn" data-lang="ar">AR</button>
       </div>
-      
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -36,7 +34,7 @@
       <div class="nav-modal-links">
         <a href="index.html" data-i18n="nav.home">Startseite</a>
         <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+        <a href="ueber-uns.html" data-i18n="nav.about">Über mich</a>
         <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="lang-switcher" style="margin-top: 3rem;">
@@ -51,62 +49,153 @@
 
   <section class="hero" style="min-height: 50vh;">
     <div class="hero-content">
-      <h1 data-i18n="services.title">Unsere Leistungen</h1>
-      <p data-i18n="services.subtitlePage">Professionelle medizinische Versorgung auf höchstem Niveau</p>
+      <div class="hero-badge" data-i18n="services.title">Leistungsportfolio</div>
+      <h1 data-i18n="services.title">Leistungsportfolio</h1>
+      <p data-i18n="services.subtitlePage">Spezialisierte Behandlungspflege und Beratungsleistungen auf akademischem Niveau</p>
     </div>
   </section>
 
   <section class="section">
     <div class="detail-section">
+
       <div class="service-card detail-card">
-        <div class="service-icon">💉</div>
-        <h3 data-i18n="services.treatment.title">Behandlungspflege nach SGB V</h3>
-        <p class="detail-subtitle" data-i18n="services.treatment.subtitle">(ärztlich verordnet)</p>
+        <div class="service-icon">🩺</div>
+        <h3 data-i18n="services.treatment.title">Spezialisierte Behandlungspflege (SGB V)</h3>
+        <p class="detail-subtitle" data-i18n="services.treatment.subtitle">(nach ärztlicher Verordnung)</p>
+        <p style="color: #555; margin-bottom: 1.5rem;" data-i18n="services.treatment.desc">Spezialisierte klinische Behandlungspflege für Pflegedienste und Kliniken auf Honorarbasis — bei hochkomplexen Patienten.</p>
+
+        <div class="service-subsection">
+          <h4 class="subsection-title">🔬 <span data-i18n="services.woundSection">Professionelles Wundmanagement</span></h4>
+          <ul class="service-list">
+            <li data-i18n="services.treatment.item1">Wundmanagement: Versorgung postoperativer, chronischer Wunden und Dekubitusbehandlung</li>
+            <li data-i18n="services.treatment.item2">Sterile Wundversorgung bei komplexen Wunden</li>
+            <li data-i18n="services.treatment.item3">Unterdruck-Wundtherapie: VAC-Pumpen und Mini-VAC-Systeme</li>
+          </ul>
+        </div>
+
+        <div class="service-subsection">
+          <h4 class="subsection-title">❤️ <span data-i18n="services.medtechSection">Spezialisierte Medizintechnik & Intensivversorgung</span></h4>
+          <ul class="service-list">
+            <li data-i18n="services.treatment.item4">LVAD-Versorgung: Betreuung mit sterilen Verbandwechseln und Akkuwechsel</li>
+            <li data-i18n="services.treatment.item5">PICC-Line: Fachgerechte Versorgung und Pflege</li>
+            <li data-i18n="services.treatment.item6">Katheter, Stoma, Drainagen und PEG-Sonden</li>
+          </ul>
+        </div>
+
+        <div class="service-subsection">
+          <h4 class="subsection-title">💉 <span data-i18n="services.medicationSection">Medikation & Applikation</span></h4>
+          <ul class="service-list">
+            <li data-i18n="services.treatment.item7">Injektionen (subkutan, intramuskulär, intravenös) und Infusionstherapie</li>
+            <li data-i18n="services.treatment.item8">Blutzuckermessung, Insulinapplikation und Antikoagulationspflege</li>
+          </ul>
+        </div>
+
+        <div class="service-subsection">
+          <h4 class="subsection-title">📊 <span data-i18n="services.monitoringSection">Monitoring & Allgemeine Pflege</span></h4>
+          <ul class="service-list">
+            <li data-i18n="services.treatment.item9">Kontrolle von Vitalparametern und klinischer Zustandseinschätzung</li>
+            <li data-i18n="services.treatment.item10">Inhalationstherapie und Sauerstoffversorgung</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card detail-card">
+        <div class="service-icon">📋</div>
+        <h3 data-i18n="services.advisory.title">Beratungs- & Gutachterleistungen (§ 37.3 SGB XI)</h3>
+        <p class="detail-subtitle" data-i18n="services.advisory.subtitle">(auf Basis des M.Sc. in Pflegewissenschaft)</p>
+        <p style="color: #555; margin-bottom: 1.5rem;" data-i18n="services.advisory.desc">Qualifizierte Beratungsleistungen aufgrund akademischer Qualifikation als Master of Science in Nursing.</p>
         <ul class="service-list">
-          <li data-i18n="services.treatment.item1">Professioneller Verbandswechsel (inkl. postoperativer Wundversorgung und Dekubitusbehandlung, sterile LVAD-Verbandwechsel)</li>
-          <li data-i18n="services.treatment.item2">Verabreichung von Injektionen (subkutan, intramuskulär, intravenös)</li>
-          <li data-i18n="services.treatment.item3">Infusionstherapie im häuslichen Umfeld</li>
-          <li data-i18n="services.treatment.item4">Blutzuckermessung und Insulinapplikation</li>
-          <li data-i18n="services.treatment.item5">Versorgung von Kathetern, Stoma, Drainagen und PEG-Sonden</li>
-          <li data-i18n="services.treatment.item6">Kontrolle von Vitalparametern (Blutdruck, Puls, Sauerstoffsättigung)</li>
-          <li data-i18n="services.treatment.item7">Medikamentengabe und Überwachung</li>
-          <li data-i18n="services.treatment.item8">Betreuung von Patienten mit implantierten Herzunterstützungssystemen (LVAD) und Akkuwechsel</li>
+          <li data-i18n="services.advisory.item1">Pflegeberatungseinsätze nach § 37 Abs. 3 SGB XI für Pflegegeldempfänger</li>
+          <li data-i18n="services.advisory.item2">Schulung und Anleitung von Angehörigen in der Handhabung spezialisierter Medizintechnik (LVAD, VAC, PICC-Line)</li>
+          <li data-i18n="services.advisory.item3">Akademisches Fallmanagement: Analyse und Optimierung von Pflegeprozessen</li>
+          <li data-i18n="services.advisory.item4">Erstellung von Pflegegutachten und Prozessberatung</li>
         </ul>
       </div>
-      
-      <div class="service-card detail-card">
-        <div class="service-icon">🤝</div>
-        <h3 data-i18n="services.support.title">Psychosoziale Beratung und Begleitung</h3>
-        <ul class="service-list">
-          <li data-i18n="services.support.item1">Psychologische Unterstützung für Pflegebedürftige und Angehörige im Umgang mit Erkrankungen und Pflegealltag</li>
-          <li data-i18n="services.support.item2">Beratung bei psychischer Belastung, Stress, Angstzuständen oder Isolation</li>
-          <li data-i18n="services.support.item3">Ressourcenorientierte Gespräche zur Förderung des Wohlbefindens</li>
-          <li data-i18n="services.support.item4">Individuelle Begleitung in schwierigen Lebenssituationen</li>
-        </ul>
+
+      <div class="service-card detail-card why-card">
+        <div class="service-icon">🎓</div>
+        <h3><span data-i18n="services.why.title">Warum ich?</span> — <span data-i18n="services.whySubtitle">Vorteile für Kooperationspartner</span></h3>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">🎓</div>
+            <div>
+              <strong data-i18n="services.academicBg">Akademischer Hintergrund</strong>
+              <p data-i18n="services.why.item1">Master of Science (M.Sc.) in Pflegewissenschaft (ZAB-anerkannt)</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🏥</div>
+            <div>
+              <strong data-i18n="services.clinicalExp">Klinische Erfahrung</strong>
+              <p data-i18n="services.why.item2">Langjährige Tätigkeit in der HTTG-Chirurgie der MHH</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">✅</div>
+            <div>
+              <strong data-i18n="services.stateRecog">Staatliche Anerkennung</strong>
+              <p data-i18n="services.why.item3">Staatlich anerkannter GuK (Nds. Landesamt für Soziales, Jugend und Familie)</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🌍</div>
+            <div>
+              <strong data-i18n="about.multilingual.title">Mehrsprachig</strong>
+              <p data-i18n="services.why.item4">Deutsch, Ukrainisch, Russisch, Englisch</p>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div class="service-card detail-card">
-        <div class="service-icon">💳</div>
-        <h3 data-i18n="services.private.title">Private Zahlungsoptionen</h3>
-        <p data-i18n="services.private.desc">Neben der Abrechnung über die Krankenkasse bieten wir auch private Zahlungsmöglichkeiten an. Sprechen Sie uns für individuelle Angebote an.</p>
-        <a href="kontakt.html" class="btn btn-primary" style="margin-top: 1.5rem;" data-i18n="hero.cta2">Kontakt aufnehmen</a>
+
+      <div class="legal-notice-box">
+        <div class="legal-notice-icon">⚖️</div>
+        <div>
+          <h4 data-i18n="legal.title">Rechtlicher Hinweis</h4>
+          <p data-i18n="legal.text">Meine Leistungen im Bereich der medizinischen Behandlungspflege (SGB V) erbringe ich ausschließlich als Kooperationspartner (Subunternehmer) für zugelassene Pflegedienste oder Kliniken. Ich verfüge über keine eigene Kassenzulassung. Die Abrechnung erfolgt über den beauftragenden Pflegedienst oder auf privater Basis.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 data-i18n="services.ctaTitle">Interesse an einer Zusammenarbeit?</h2>
+      <p data-i18n="services.ctaDesc">Nehmen Sie Kontakt auf — ich freue mich auf Ihre Anfrage.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+        <a href="kontakt.html" class="btn btn-primary" data-i18n="hero.cta2">Kontakt aufnehmen</a>
+        <button class="btn btn-outline" onclick="openBooking()" data-i18n="booking.btn">Termin vereinbaren</button>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege">
+      </div>
+      <div class="footer-info">
+        <p><strong>Ihor Liubchyk, M.Sc., GuK</strong></p>
+        <p>Domagkweg 38, 30627 Hannover</p>
+        <p><a href="tel:+4917632755364">+49 176 32755364</a> · <a href="mailto:info@sannovia-pflege.de">info@sannovia-pflege.de</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
   </footer>
 
   <div class="ai-badge" onclick="toggleChat()">
-    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="AI">
     <span data-i18n="chat.title">AI Assistent</span>
   </div>
 
   <div class="chat-window" id="chatWindow">
     <div class="chat-header">
       <div class="chat-header-info">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia">
         <div class="chat-header-text">
           <h4 data-i18n="chat.title">AI Assistent</h4>
           <span>Sannovia Pflege</span>
@@ -121,6 +210,35 @@
     <div class="chat-input-area">
       <input type="text" id="userInput" data-i18n-placeholder="chat.placeholder" placeholder="Ihre Frage..." onkeypress="handleKey(event)">
       <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-content">
+      <button class="booking-close" onclick="closeBooking()">×</button>
+      <h2 data-i18n="booking.title">Termin vereinbaren</h2>
+      <p data-i18n="booking.subtitle">Füllen Sie das Formular aus und wir melden uns bei Ihnen</p>
+      <form id="bookingForm" onsubmit="submitBooking(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="booking.firstName">Vorname</label>
+            <input type="text" id="firstName" required data-i18n-placeholder="booking.firstNamePlaceholder" placeholder="Max">
+          </div>
+          <div class="form-group">
+            <label data-i18n="booking.lastName">Nachname</label>
+            <input type="text" id="lastName" required data-i18n-placeholder="booking.lastNamePlaceholder" placeholder="Mustermann">
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="booking.phone">Telefon</label>
+          <input type="tel" id="bookingPhone" required data-i18n-placeholder="booking.phonePlaceholder" placeholder="+49 176 32755364">
+        </div>
+        <div class="form-group">
+          <label data-i18n="booking.email">E-Mail</label>
+          <input type="email" id="bookingEmail" required data-i18n-placeholder="booking.emailPlaceholder" placeholder="ihre@email.de">
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" data-i18n="booking.submit">Anfrage senden</button>
+      </form>
     </div>
   </div>
 

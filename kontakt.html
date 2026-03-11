@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Sannovia Pflege</title>
+  <title>Kontakt — Sannovia Pflege | Ihor Liubchyk M.Sc.</title>
+  <meta name="description" content="Kontakt zu Ihor Liubchyk, M.Sc., GuK — Spezialisierte Honorarpflege in Hannover. Tel: +49 176 32755364, E-Mail: info@sannovia-pflege.de">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +12,8 @@
   <header id="header">
     <nav>
       <a href="index.html" class="logo">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="Sannovia Pflege">
-        <span class="logo-text">Sannovia</span>
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege Logo">
       </a>
-      
       <div class="lang-switcher">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -22,7 +21,6 @@
         <button class="lang-btn" data-lang="ua">UA</button>
         <button class="lang-btn" data-lang="ar">AR</button>
       </div>
-      
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -36,7 +34,7 @@
       <div class="nav-modal-links">
         <a href="index.html" data-i18n="nav.home">Startseite</a>
         <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
-        <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+        <a href="ueber-uns.html" data-i18n="nav.about">Über mich</a>
         <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="lang-switcher" style="margin-top: 3rem;">
@@ -51,52 +49,125 @@
 
   <section class="hero" style="min-height: 50vh;">
     <div class="hero-content">
+      <div class="hero-badge" data-i18n="contact.badge">Kontakt & Zusammenarbeit</div>
       <h1 data-i18n="contact.title">Kontakt</h1>
-      <p data-i18n="contact.subtitle">Wir sind für Sie da — nehmen Sie Kontakt auf!</p>
+      <p data-i18n="contact.subtitle">Interesse an einer Zusammenarbeit? Nehmen Sie Kontakt auf!</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 900px; margin: 0 auto;">
-      <div class="service-card" style="text-align: center;">
-        <div class="service-icon">📞</div>
-        <h3 data-i18n="contact.phone">Telefon</h3>
-        <p style="font-size: 1.3rem; font-weight: 700; color: var(--primary);">+49 123 456 789</p>
-        <p style="color: #666; margin-top: 0.5rem;"><span data-i18n="contact.hours">Mo-Fr: 8:00-18:00</span><br><span data-i18n="contact.hoursSat">Sa: 9:00-14:00</span></p>
-        <a href="tel:+49123456789" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.cta">Jetzt anrufen</a>
+    <div class="contact-layout">
+
+      <div class="contact-info-block">
+        <h2 style="color: var(--secondary); margin-bottom: 0.5rem;">Ihor Liubchyk</h2>
+        <p style="color: var(--primary); font-weight: 600; margin-bottom: 2rem;">M.Sc., Gesundheits- und Krankenpfleger (GuK)</p>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-details">
+            <h3 data-i18n="contact.phone">Telefon</h3>
+            <a href="tel:+4917632755364" style="font-size: 1.3rem; font-weight: 700; color: var(--primary);">+49 176 32755364</a>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 0.3rem;"><span data-i18n="contact.hours">Mo-Fr: 8:00-18:00</span> · <span data-i18n="contact.hoursSat">Sa: 9:00-14:00</span></p>
+            <a href="tel:+4917632755364" class="btn btn-primary" style="margin-top: 1rem; display: inline-flex;" data-i18n="contact.cta">Jetzt anrufen</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-details">
+            <h3 data-i18n="contact.email">E-Mail</h3>
+            <a href="mailto:info@sannovia-pflege.de" style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">info@sannovia-pflege.de</a>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 0.3rem;" data-i18n="contact.responseTime">Antwort innerhalb von 24 Stunden</p>
+            <a href="mailto:info@sannovia-pflege.de" class="btn btn-primary" style="margin-top: 1rem; display: inline-flex;" data-i18n="contact.emailCta">E-Mail senden</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-details">
+            <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
+            <a href="https://wa.me/4917632755364" target="_blank" style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">+49 176 32755364</a>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 0.3rem;" data-i18n="contact.quickResponse">Schnelle Antworten rund um die Uhr</p>
+            <a href="https://wa.me/4917632755364" target="_blank" class="btn btn-primary" style="margin-top: 1rem; display: inline-flex;" data-i18n="contact.whatsappBtn">WhatsApp öffnen ↗</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-details">
+            <h3 data-i18n="contact.address">Adresse</h3>
+            <p style="font-size: 1.1rem; font-weight: 600; color: var(--secondary);">Domagkweg 38</p>
+            <p style="font-size: 1.1rem; font-weight: 600; color: var(--secondary);">30627 Hannover</p>
+            <a href="https://maps.google.com/?q=Domagkweg+38,+30627+Hannover" target="_blank" class="btn btn-primary" style="margin-top: 1rem; display: inline-flex;" data-i18n="contact.mapsBtn">Auf Google Maps ↗</a>
+          </div>
+        </div>
       </div>
-      
-      <div class="service-card" style="text-align: center;">
-        <div class="service-icon">✉️</div>
-        <h3 data-i18n="contact.email">E-Mail</h3>
-        <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">info@sannovia-pflege.de</p>
-        <p style="color: #666; margin-top: 0.5rem;" data-i18n="contact.responseTime">Antwort innerhalb von 24 Stunden</p>
-        <a href="mailto:info@sannovia-pflege.de" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.emailCta">E-Mail senden</a>
+
+      <div class="contact-form-block">
+        <div class="service-card" style="height: 100%;">
+          <h3 style="color: var(--secondary); margin-bottom: 0.5rem;" data-i18n="contact.directRequest">Direkte Anfrage</h3>
+          <p style="color: #666; margin-bottom: 2rem;" data-i18n="contact.directRequestDesc">Schreiben Sie mir — ich melde mich zeitnah zurück.</p>
+          <form id="contactForm" onsubmit="submitContact(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="booking.firstName">Vorname</label>
+                <input type="text" required placeholder="Max">
+              </div>
+              <div class="form-group">
+                <label data-i18n="booking.lastName">Nachname</label>
+                <input type="text" required placeholder="Mustermann">
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="booking.phone">Telefon</label>
+              <input type="tel" required placeholder="+49 176 32755364">
+            </div>
+            <div class="form-group">
+              <label data-i18n="booking.email">E-Mail</label>
+              <input type="email" required placeholder="ihre@email.de">
+            </div>
+            <div class="form-group">
+              <label data-i18n="contact.message">Nachricht</label>
+              <textarea rows="4" style="width:100%;padding:0.9rem 1rem;border:2px solid #e0e0e0;border-radius:12px;font-size:1rem;font-family:inherit;resize:vertical;transition:all 0.3s;" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Ihr Anliegen..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="booking.submit">Anfrage senden</button>
+          </form>
+          <div class="legal-note-small">
+            <p data-i18n="legal.text" style="font-size: 0.8rem; color: #888; margin-top: 1.5rem; line-height: 1.5;">Meine Leistungen im Bereich der medizinischen Behandlungspflege (SGB V) erbringe ich ausschließlich als Kooperationspartner (Subunternehmer) für zugelassene Pflegedienste oder Kliniken.</p>
+          </div>
+        </div>
       </div>
-      
-      <div class="service-card" style="text-align: center;">
-        <div class="service-icon">💬</div>
-        <h3 data-i18n="contact.whatsapp">WhatsApp</h3>
-        <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">+49 123 456 789</p>
-        <p style="color: #666; margin-top: 0.5rem;" data-i18n="contact.quickResponse">Schnelle Antworten rund um die Uhr</p>
-        <a href="https://wa.me/49123456789" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;" data-i18n="contact.whatsapp">WhatsApp</a>
-      </div>
+
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia Pflege">
+      </div>
+      <div class="footer-info">
+        <p><strong>Ihor Liubchyk, M.Sc., GuK</strong></p>
+        <p>Domagkweg 38, 30627 Hannover</p>
+        <p><a href="tel:+4917632755364">+49 176 32755364</a> · <a href="mailto:info@sannovia-pflege.de">info@sannovia-pflege.de</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Sannovia Pflege — <span data-i18n="footer.location">Hannover & Umgebung</span></p>
   </footer>
 
   <div class="ai-badge" onclick="toggleChat()">
-    <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+    <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="AI">
     <span data-i18n="chat.title">AI Assistent</span>
   </div>
 
   <div class="chat-window" id="chatWindow">
     <div class="chat-header">
       <div class="chat-header-info">
-        <img src="attached_assets/IMG_20251224_204554_946_1766606351701.jpg" alt="AI">
+        <img src="attached_assets/IMG_20251224_204554_946_1766605607682.jpg" alt="Sannovia">
         <div class="chat-header-text">
           <h4 data-i18n="chat.title">AI Assistent</h4>
           <span>Sannovia Pflege</span>
@@ -116,5 +187,11 @@
 
   <script src="translations.js"></script>
   <script src="script.js"></script>
+  <script>
+    function submitContact(e) {
+      e.preventDefault();
+      alert('Vielen Dank für Ihre Anfrage! Ihor Liubchyk wird sich zeitnah bei Ihnen melden.\n\nTel: +49 176 32755364\nE-Mail: info@sannovia-pflege.de');
+    }
+  </script>
 </body>
 </html>

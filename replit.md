@@ -2,36 +2,38 @@
 
 ## Overview
 
-Sannovia Pflege is a premium multilingual healthcare services website for a professional home care service in Hannover, Germany. The website serves as a digital presence offering details about ambulatory care, LVAD medical technology support, and psychosocial assistance. Features include a glassmorphism design aesthetic, 5-language support, and an AI-powered assistant.
+Professional multilingual healthcare services website for Ihor Liubchyk, M.Sc., GuK — a freelance specialized nurse in Hannover offering LVAD/VAC/PICC-Line treatment nursing (SGB V) and advisory services (§37.3 SGB XI) as a subcontractor. Features glassmorphism design, 5-language support, and an AI-powered assistant.
+
+## Real Contact Information
+
+- **Name:** Ihor Liubchyk, M.Sc., GuK
+- **Phone:** +49 176 32755364
+- **Email:** info@sannovia-pflege.de
+- **Address:** Domagkweg 38, 30627 Hannover
+- **Legal:** Services provided as Subunternehmer — no own Kassenzulassung
 
 ## User Preferences
 
-- Premium, luxurious ("шикарно") design aesthetic
+- Premium design aesthetic
 - Multi-language support (German, English, Russian, Ukrainian, Arabic)
 - AI assistant with medical disclaimer logic
 - Teal/turquoise color palette
 
-## Recent Changes (December 2024)
-
-- Complete multilingual system with 5 languages (DE, EN, RU, UA, AR)
-- Premium glassmorphism design with floating animations
-- AI Assistant integration with language-aware responses
-- RTL support for Arabic language
-- HTML lang attribute updates dynamically with language selection
-
 ## System Architecture
 
 ### Frontend Architecture
-The website uses a **static multi-page architecture** with traditional HTML, CSS, and JavaScript.
+Static multi-page architecture with HTML, CSS, and JavaScript.
 
 **Key files:**
-- `index.html` - Home page with hero and services overview
-- `leistungen.html` - Services page
-- `ueber-uns.html` - About page with expertise cards
-- `kontakt.html` - Contact page with phone/email/WhatsApp
+- `index.html` - Home page with hero, services overview, highlights strip
+- `leistungen.html` - Detailed services page (SGB V treatment + §37.3 advisory)
+- `ueber-uns.html` - About page with qualifications profile
+- `kontakt.html` - Contact page with phone/email/WhatsApp/address
+- `impressum.html` - Legal imprint (German-only, standard practice)
+- `datenschutz.html` - Privacy policy (German-only, standard practice)
 - `style.css` - Premium glassmorphism styling
 - `script.js` - Language switching, navigation, chat functionality
-- `translations.js` - All translations for 5 languages
+- `translations.js` - Complete translations for all 5 languages (~900 lines)
 
 ### Backend Architecture
 - `server.js` - Node.js HTTP server with AI chat API endpoint
@@ -43,28 +45,30 @@ The website uses a **static multi-page architecture** with traditional HTML, CSS
 - **Glassmorphism:** Blur effects, transparent backgrounds, subtle borders
 - **Animations:** Floating AI badge, card hover effects, smooth transitions
 - **Typography:** Inter font family
+- **Logo:** `attached_assets/IMG_20251224_204554_946_1766605607682.jpg`
 
 ### Multilingual System
 - Languages: German (DE), English (EN), Russian (RU), Ukrainian (UA), Arabic (AR)
-- `data-i18n` attributes for text content
+- `data-i18n` attributes for all visible text content
 - `data-i18n-placeholder` for input placeholders
 - localStorage persistence for language preference
 - RTL layout support for Arabic
 - Dynamic HTML lang attribute updates
+- All user-visible text is translatable (except Impressum/Datenschutz which stay German per legal convention)
 
 ### AI Assistant
 - Floating badge in bottom-right corner
 - Language-aware responses (responds in selected language)
 - Medical disclaimer logic - never diagnoses
-- Information about services and general medication advice
-- Directs users to contact page (+49 123 456 789) for professional help
+- Information about Ihor Liubchyk's services and qualifications
+- Directs users to contact (+49 176 32755364) for professional help
 
 ## External Dependencies
 
 - **Google Fonts API:** Inter font family
-- **Unsplash Images:** Hero background image
 - **Replit AI Integration:** OpenAI gpt-4o for chat responses
-- **WhatsApp Integration:** Direct messaging links
+- **WhatsApp Integration:** Direct messaging links (wa.me)
+- **Google Maps:** Address link
 
 ## Development
 
